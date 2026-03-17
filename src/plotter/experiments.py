@@ -1,5 +1,7 @@
 
 
+import random
+import numpy as np
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 src_dir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
@@ -8,6 +10,8 @@ from lineRobot.robot_kinematics import (RobotState, StraightPath, CurvedPath,
                                          run_simulation, compute_kpis, random_spawn)
 from pidController.robotPid import RobotPIDController, GAIN_PRESETS
 from plot import KPILogger, ExperimentReporter
+np.random.seed(42)
+random.seed(42)
 
 # ── Setup ──────────────────────────────────────────────────────────────
 logger   = KPILogger(log_dir="results")
@@ -31,9 +35,9 @@ logger.print_table("E1")
 # ── E2: Curved Path ────────────────────────────────────────────────────
 print("\n>>> E2: Curved Path Robustness")
 ctrl = RobotPIDController.from_preset("E1_set3")
-straight_hist = run_simulation(RobotState(0.0, 0.5, 0.2), straight, ctrl.step, total_time=20.0)
+straight_hist = run_simulation(RobotState(0.0, 0.8, 0.3), straight, ctrl.step, total_time=20.0)
 ctrl.reset()
-curved_hist = run_simulation(random_spawn(curved), curved, ctrl.step, total_time=20.0)
+curved_hist = run_simulation(RobotState(0.0, 0.8, 0.3), curved, ctrl.step, total_time=20.0)
 logger.log("E2", "E1_set3", 1, "straight", compute_kpis(straight_hist), notes="straight baseline")
 logger.log("E2", "E1_set3", 1, "curved",   compute_kpis(curved_hist),   notes="S-curve path")
 reporter.plot_e2_curved(straight_hist, curved_hist, straight, curved)
