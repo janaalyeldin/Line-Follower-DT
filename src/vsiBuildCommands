@@ -1,0 +1,88 @@
+add component -type Python -name simulator
+add port -componentName simulator -name simulator -gateway python2DtCan
+
+add component -type Python -name controller
+add port -componentName controller -name controller -gateway python2DtCan
+
+add component -type Python -name plotter
+add port -componentName plotter -name plotter -gateway python2DtCan
+
+
+# Client 1 — Simulator (Plant)
+# Receives wheel velocity commands from controller
+# Outputs robot pose, path errors, and reference points
+define componentSignals -componentName simulator -signals "[v_left:double:input,v_right:double:input,x_pos:double:output,y_pos:double:output,theta:double:output,lateral_error:double:output,heading_error:double:output,x_ref:double:output,y_ref:double:output]"
+
+# Client 2 — PID Controller
+# Receives lateral and heading errors from simulator
+# Outputs wheel velocity commands
+define componentSignals -componentName controller -signals "[v_left:double:output,v_right:double:output,lateral_error:double:input,heading_error:double:input]"
+
+# Client 3 — Plotter / Logger
+# Receives all signals for visualization and KPI logging
+define componentSignals -componentName plotter -signals "[v_left:double:input,v_right:double:input,x_pos:double:input,y_pos:double:input,theta:double:input,lateral_error:double:input,heading_error:double:input,x_ref:double:input,y_ref:double:input]"
+
+
+# ────────────────────────────────────────────
+# Each frame carries one signal over the VSI backplane.
+#
+#   ID 10 — v_left        (controller → simulator)
+#   ID 11 — v_right       (controller → simulator)
+#   ID 12 — lateral_error (simulator  → controller)
+#   ID 13 — heading_error (simulator  → controller)
+#   ID 14 — x_pos         (simulator  → plotter)
+#   ID 15 — y_pos         (simulator  → plotter)
+#   ID 16 — theta         (simulator  → plotter)
+#   ID 17 — x_ref         (simulator  → plotter)
+#   ID 18 — y_ref         (simulator  → plotter)
+# Format: -signals [signal_name:bit_offset:bit_length]
+# ────────────────────────────────────────────
+
+# Frame 10 — v_left 
+define frame -componentName simulator  -portName simulator  -id 10 -signals [v_left:0:64]
+define frame -componentName controller -portName controller -id 10 -signals [v_left:0:64]
+define frame -componentName plotter    -portName plotter    -id 10 -signals [v_left:0:64]
+
+# Frame 11 — v_right  
+define frame -componentName simulator  -portName simulator  -id 11 -signals [v_right:0:64]
+define frame -componentName controller -portName controller -id 11 -signals [v_right:0:64]
+define frame -componentName plotter    -portName plotter    -id 11 -signals [v_right:0:64]
+
+# Frame 12 — lateral_error  
+define frame -componentName simulator  -portName simulator  -id 12 -signals [lateral_error:0:64]
+define frame -componentName controller -portName controller -id 12 -signals [lateral_error:0:64]
+define frame -componentName plotter    -portName plotter    -id 12 -signals [lateral_error:0:64]
+
+# Frame 13 — heading_error  
+define frame -componentName simulator  -portName simulator  -id 13 -signals [heading_error:0:64]
+define frame -componentName controller -portName controller -id 13 -signals [heading_error:0:64]
+define frame -componentName plotter    -portName plotter    -id 13 -signals [heading_error:0:64]
+
+# Frame 14 — x_pos 
+define frame -componentName simulator -portName simulator -id 14 -signals [x_pos:0:64]
+define frame -componentName plotter   -portName plotter   -id 14 -signals [x_pos:0:64]
+
+# Frame 15 — y_pos
+define frame -componentName simulator -portName simulator -id 15 -signals [y_pos:0:64]
+define frame -componentName plotter   -portName plotter   -id 15 -signals [y_pos:0:64]
+
+# Frame 16 — theta
+define frame -componentName simulator -portName simulator -id 16 -signals [theta:0:64]
+define frame -componentName plotter   -portName plotter   -id 16 -signals [theta:0:64]
+
+# Frame 17 — x_ref
+define frame -componentName simulator -portName simulator -id 17 -signals [x_ref:0:64]
+define frame -componentName plotter   -portName plotter   -id 17 -signals [x_ref:0:64]
+
+# Frame 18 — y_ref
+define frame -componentName simulator -portName simulator -id 18 -signals [y_ref:0:64]
+define frame -componentName plotter   -portName plotter   -id 18 -signals [y_ref:0:64]
+
+
+set totalSimTime 70 s
+set simulationStep 0.01 s
+
+set workspaceDir .
+set digitalTwinName lineFollowerDemo
+
+generate

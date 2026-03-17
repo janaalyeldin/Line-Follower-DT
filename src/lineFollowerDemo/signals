@@ -1,0 +1,52 @@
+-N
+0 simulator 1
+v_left double i 0
+v_right double i 0
+x_pos double o 0
+y_pos double o 0
+theta double o 0
+lateral_error double o 0
+heading_error double o 0
+x_ref double o 0
+y_ref double o 0
+-N
+1 controller 1
+v_left double o 0
+v_right double o 0
+lateral_error double i 0
+heading_error double i 0
+-N
+2 plotter 1
+v_left double i 0
+v_right double i 0
+x_pos double i 0
+y_pos double i 0
+theta double i 0
+lateral_error double i 0
+heading_error double i 0
+x_ref double i 0
+y_ref double i 0
+-CAN
+10 0 i [v_left:0:64]
+11 0 i [v_right:0:64]
+12 0 o [lateral_error:0:64]
+13 0 o [heading_error:0:64]
+14 0 o [x_pos:0:64]
+15 0 o [y_pos:0:64]
+16 0 o [theta:0:64]
+17 0 o [x_ref:0:64]
+18 0 o [y_ref:0:64]
+10 1 o [v_left:0:64]
+11 1 o [v_right:0:64]
+12 1 i [lateral_error:0:64]
+13 1 i [heading_error:0:64]
+10 2 i [v_left:0:64]
+11 2 i [v_right:0:64]
+12 2 i [lateral_error:0:64]
+13 2 i [heading_error:0:64]
+14 2 i [x_pos:0:64]
+15 2 i [y_pos:0:64]
+16 2 i [theta:0:64]
+17 2 i [x_ref:0:64]
+18 2 i [y_ref:0:64]
+-END

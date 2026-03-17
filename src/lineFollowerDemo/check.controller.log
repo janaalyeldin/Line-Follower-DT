@@ -1,0 +1,7610 @@
+Script started on 2026-03-17 03:31:22+00:00 [TERM="xterm" TTY="/dev/pts/7" COLUMNS="80" LINES="24"]
+make[1]: Entering directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/lineFollowerDemo/src/lineFollowerDemo'
+python3 .//src/controller/controller.py --domain="AF_UNIX" --server-url="localhost"
++=+ XLVIP-INFO: XlTlmMessageLayer::connectToServer():
++=+    Connecting clientId=':remoteSession1' to 'server@localhost' ...
++=+    Successfully connected 'client :remoteSession1' to 'server@localhost'
++=+    Negotiated socket connection configuration
++=+        Use socket manager thread=FALSE
++=+        Use TCP_NODELAY=TRUE
++=+        Use UDP=FALSE
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:timeServerConduit1
+           localClientConduitHandle=0x5a8e84f65bd8
+           remoteServerProxyConduitHandle=0x1ed694a0
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:resetServerConduit1
+           localClientConduitHandle=0x5a8e84ea2118
+           remoteServerProxyConduitHandle=0x1ed656b0
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:txConfigPort1
+           localClientConduitHandle=0x5a8e8502fce0
+           remoteServerProxyConduitHandle=0x1ed77e20
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:rxConfigPort1
+           localClientConduitHandle=0x5a8e84c9de80
+           remoteServerProxyConduitHandle=0x1ed74220
++=+ INFO: ... successfully connected to TLM FabricServer !
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:txCanFrameConduit1
+           localClientConduitHandle=0x5a8e84db4480
+           remoteServerProxyConduitHandle=0x1ed6dcc0
++=+ XLVIP-INFO: XlTlmMessageLayer::connect():
++=+    Successfully connected this remote client conduit into the TLM fabric server:
++=+        clientId=:remoteSession1
++=+        conduitId=:rxCanFrameConduit1
+           localClientConduitHandle=0x5a8e84e80700
+           remoteServerProxyConduitHandle=0x1ed6cb50
+
++=controller+=
+  VSI time: 30100 ns
+  Inputs:
+	lateral_error = 0.0
+	heading_error = 0.0
+  Outputs:
+	v_left = 0.5
+	v_right = 0.5
+
+
+
+
++=controller+=
+  VSI time: 10030100 ns
+  Inputs:
+	lateral_error = 0.8
+	heading_error = 0.2999999999999998
+  Outputs:
+	v_left = 0.5
+	v_right = 0.5
+
+
+
+
++=controller+=
+  VSI time: 20030100 ns
+  Inputs:
+	lateral_error = 0.8
+	heading_error = 0.2999999999999998
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 30030100 ns
+  Inputs:
+	lateral_error = 0.8014776010333068
+	heading_error = 0.2999999999999998
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 40030100 ns
+  Inputs:
+	lateral_error = 0.8029552020666135
+	heading_error = 0.2999999999999998
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 50030100 ns
+  Inputs:
+	lateral_error = 0.8041372828932589
+	heading_error = 0.23999999999999977
+  Outputs:
+	v_left = 1.0
+	v_right = -0.15660996500514845
+
+
+
+
++=controller+=
+  VSI time: 60030100 ns
+  Inputs:
+	lateral_error = 0.8050880933989675
+	heading_error = 0.2999999999999998
+  Outputs:
+	v_left = 0.4200754168631904
+	v_right = 0.5799245831368096
+
+
+
+
++=controller+=
+  VSI time: 70030100 ns
+  Inputs:
+	lateral_error = 0.8062701742256129
+	heading_error = 0.23999999999999977
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 80030100 ns
+  Inputs:
+	lateral_error = 0.8072725543577166
+	heading_error = 0.18216950174974222
+  Outputs:
+	v_left = 0.46896647735450514
+	v_right = 0.5310335226454949
+
+
+
+
++=controller+=
+  VSI time: 90030100 ns
+  Inputs:
+	lateral_error = 0.8081783723629263
+	heading_error = 0.19016196006342323
+  Outputs:
+	v_left = 0.4092755656045226
+	v_right = 0.5907244343954774
+
+
+
+
++=controller+=
+  VSI time: 100030100 ns
+  Inputs:
+	lateral_error = 0.8089344441147944
+	heading_error = 0.13016196006342318
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1469493699107033
+
+
+
+
++=controller+=
+  VSI time: 110030100 ns
+  Inputs:
+	lateral_error = 0.8095834177865242
+	heading_error = 0.13326531232797256
+  Outputs:
+	v_left = 0.34548111195138675
+	v_right = 0.6545188880486132
+
+
+
+
++=controller+=
+  VSI time: 120030100 ns
+  Inputs:
+	lateral_error = 0.8102477738117512
+	heading_error = 0.1423377557675205
+  Outputs:
+	v_left = 1.0
+	v_right = -0.045486171672314835
+
+
+
+
++=controller+=
+  VSI time: 130030100 ns
+  Inputs:
+	lateral_error = 0.810852832448415
+	heading_error = 0.08499028727198521
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1304181336799507
+
+
+
+
++=controller+=
+  VSI time: 140030100 ns
+  Inputs:
+	lateral_error = 0.8112772724740975
+	heading_error = 0.10044217607684658
+  Outputs:
+	v_left = 0.3475685594555562
+	v_right = 0.6524314405444438
+
+
+
+
++=controller+=
+  VSI time: 150030100 ns
+  Inputs:
+	lateral_error = 0.8117558340841533
+	heading_error = 0.048167867493230876
+  Outputs:
+	v_left = 1.0
+	v_right = -0.14860526495112625
+
+
+
+
++=controller+=
+  VSI time: 160030100 ns
+  Inputs:
+	lateral_error = 0.8119651826296826
+	heading_error = -0.008353039190766687
+  Outputs:
+	v_left = 0.3840764277334985
+	v_right = 0.6159235722665015
+
+
+
+
++=controller+=
+  VSI time: 170030100 ns
+  Inputs:
+	lateral_error = 0.8119234179194095
+	heading_error = 0.006890104863677582
+  Outputs:
+	v_left = 0.2609631402826978
+	v_right = 0.7390368597173023
+
+
+
+
++=controller+=
+  VSI time: 180030100 ns
+  Inputs:
+	lateral_error = 0.81195274868236
+	heading_error = -0.05054015838387871
+  Outputs:
+	v_left = 1.0
+	v_right = -0.06154114716052106
+
+
+
+
++=controller+=
+  VSI time: 190030100 ns
+  Inputs:
+	lateral_error = 0.8117001554559612
+	heading_error = -0.0389478011572284
+  Outputs:
+	v_left = 0.24613660015318056
+	v_right = 0.7538633998468194
+
+
+
+
++=controller+=
+  VSI time: 200030100 ns
+  Inputs:
+	lateral_error = 0.8115054656807204
+	heading_error = -0.015044115185498086
+  Outputs:
+	v_left = 0.98046210551449
+	v_right = 0.01953789448551002
+
+
+
+
++=controller+=
+  VSI time: 210030100 ns
+  Inputs:
+	lateral_error = 0.8114348769280672
+	heading_error = -0.06812117254352401
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16623639744583318
+
+
+
+
++=controller+=
+  VSI time: 220030100 ns
+  Inputs:
+	lateral_error = 0.8110945344341529
+	heading_error = -0.04273483255884214
+  Outputs:
+	v_left = 0.28503961400660727
+	v_right = 0.7149603859933927
+
+
+
+
++=controller+=
+  VSI time: 230030100 ns
+  Inputs:
+	lateral_error = 0.8108809253030602
+	heading_error = -0.09078104311029112
+  Outputs:
+	v_left = 1.0
+	v_right = -0.13076940685025595
+
+
+
+
++=controller+=
+  VSI time: 240030100 ns
+  Inputs:
+	lateral_error = 0.8105029952542384
+	heading_error = -0.14909286298258273
+  Outputs:
+	v_left = 0.321650006345387
+	v_right = 0.678349993654613
+
+
+
+
++=controller+=
+  VSI time: 250030100 ns
+  Inputs:
+	lateral_error = 0.8097602896529187
+	heading_error = -0.1275968243832435
+  Outputs:
+	v_left = 0.13476880089445797
+	v_right = 0.865231199105542
+
+
+
+
++=controller+=
+  VSI time: 260030100 ns
+  Inputs:
+	lateral_error = 0.8092072378929097
+	heading_error = -0.18413529472575618
+  Outputs:
+	v_left = 1.0
+	v_right = -0.007735742898920206
+
+
+
+
++=controller+=
+  VSI time: 270030100 ns
+  Inputs:
+	lateral_error = 0.8082917553193898
+	heading_error = -0.166300295360295
+  Outputs:
+	v_left = 0.155722349968964
+	v_right = 0.844277650031036
+
+
+
+
++=controller+=
+  VSI time: 280030100 ns
+  Inputs:
+	lateral_error = 0.8074640811844721
+	heading_error = -0.12977717544974077
+  Outputs:
+	v_left = 0.9349719289398406
+	v_right = 0.06502807106015945
+
+
+
+
++=controller+=
+  VSI time: 290030100 ns
+  Inputs:
+	lateral_error = 0.8068220207451446
+	heading_error = -0.18016396259468692
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 300030100 ns
+  Inputs:
+	lateral_error = 0.8059260663222284
+	heading_error = -0.1457361975915834
+  Outputs:
+	v_left = 0.22574360550280503
+	v_right = 0.774256394497195
+
+
+
+
++=controller+=
+  VSI time: 310030100 ns
+  Inputs:
+	lateral_error = 0.8051999620104635
+	heading_error = -0.18923339048556764
+  Outputs:
+	v_left = 1.0
+	v_right = -0.14445145891302702
+
+
+
+
++=controller+=
+  VSI time: 320030100 ns
+  Inputs:
+	lateral_error = 0.804447537907403
+	heading_error = -0.2492333904855677
+  Outputs:
+	v_left = 0.29222954390475175
+	v_right = 0.7077704560952482
+
+
+
+
++=controller+=
+  VSI time: 330030100 ns
+  Inputs:
+	lateral_error = 0.8032142323616644
+	heading_error = -0.22180775103584827
+  Outputs:
+	v_left = 0.04531504922734053
+	v_right = 0.9546849507726595
+
+
+
+
++=controller+=
+  VSI time: 340030100 ns
+  Inputs:
+	lateral_error = 0.8022731570063804
+	heading_error = -0.2790303239814995
+  Outputs:
+	v_left = 0.9826774030365708
+	v_right = 0.017322596963429193
+
+
+
+
++=controller+=
+  VSI time: 350030100 ns
+  Inputs:
+	lateral_error = 0.8008960389745078
+	heading_error = -0.25825327837197465
+  Outputs:
+	v_left = 0.0777203144629679
+	v_right = 0.9222796855370321
+
+
+
+
++=controller+=
+  VSI time: 360030100 ns
+  Inputs:
+	lateral_error = 0.7996190782430396
+	heading_error = -0.21278478329470873
+  Outputs:
+	v_left = 0.8824907898317393
+	v_right = 0.11750921016826071
+
+
+
+
++=controller+=
+  VSI time: 370030100 ns
+  Inputs:
+	lateral_error = 0.7985631647821683
+	heading_error = -0.26105252359836584
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 380030100 ns
+  Inputs:
+	lateral_error = 0.7972726769943488
+	heading_error = -0.2188245550446628
+  Outputs:
+	v_left = 0.1827949162541055
+	v_right = 0.8172050837458945
+
+
+
+
++=controller+=
+  VSI time: 390030100 ns
+  Inputs:
+	lateral_error = 0.7961872652000961
+	heading_error = -0.25707363402783656
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1688475087086101
+
+
+
+
++=controller+=
+  VSI time: 400030100 ns
+  Inputs:
+	lateral_error = 0.7951702594224496
+	heading_error = -0.3170736340278366
+  Outputs:
+	v_left = 0.29440608540460383
+	v_right = 0.7055939145953962
+
+
+
+
++=controller+=
+  VSI time: 410030100 ns
+  Inputs:
+	lateral_error = 0.7936113223852455
+	heading_error = -0.2853531256532471
+  Outputs:
+	v_left = -0.003926620939165737
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 420030100 ns
+  Inputs:
+	lateral_error = 0.7924414905681265
+	heading_error = -0.34379550108867774
+  Outputs:
+	v_left = 0.9694279274584703
+	v_right = 0.030572072541529716
+
+
+
+
++=controller+=
+  VSI time: 430030100 ns
+  Inputs:
+	lateral_error = 0.7907561760289619
+	heading_error = -0.3232361096291383
+  Outputs:
+	v_left = 0.017852046219054674
+	v_right = 0.9821479537809453
+
+
+
+
++=controller+=
+  VSI time: 440030100 ns
+  Inputs:
+	lateral_error = 0.7891742285343019
+	heading_error = -0.27303977858217987
+  Outputs:
+	v_left = 0.8167459144146552
+	v_right = 0.18325408558534484
+
+
+
+
++=controller+=
+  VSI time: 450030100 ns
+  Inputs:
+	lateral_error = 0.7878259292844328
+	heading_error = -0.3199825713280271
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 460030100 ns
+  Inputs:
+	lateral_error = 0.7862531792011548
+	heading_error = -0.2717677759499324
+  Outputs:
+	v_left = 0.14682252823932962
+	v_right = 0.8531774717606704
+
+
+
+
++=controller+=
+  VSI time: 470030100 ns
+  Inputs:
+	lateral_error = 0.7849110054509483
+	heading_error = -0.30344236739139774
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18869679455089128
+
+
+
+
++=controller+=
+  VSI time: 480030100 ns
+  Inputs:
+	lateral_error = 0.7837157771773298
+	heading_error = -0.3634423673913978
+  Outputs:
+	v_left = 0.3275161342379669
+	v_right = 0.6724838657620331
+
+
+
+
++=controller+=
+  VSI time: 490030100 ns
+  Inputs:
+	lateral_error = 0.7819383079752504
+	heading_error = -0.3281246202153305
+  Outputs:
+	v_left = -0.037556811582933225
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 500030100 ns
+  Inputs:
+	lateral_error = 0.7806310215692278
+	heading_error = -0.3875594599428749
+  Outputs:
+	v_left = 0.9671341705988026
+	v_right = 0.03286582940119748
+
+
+
+
++=controller+=
+  VSI time: 510030100 ns
+  Inputs:
+	lateral_error = 0.7787413715316837
+	heading_error = -0.37031107336667146
+  Outputs:
+	v_left = -0.0240751530841552
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 520030100 ns
+  Inputs:
+	lateral_error = 0.7769998044198112
+	heading_error = -0.318433232787525
+  Outputs:
+	v_left = 0.7326533274989617
+	v_right = 0.2673466725010383
+
+
+
+
++=controller+=
+  VSI time: 530030100 ns
+  Inputs:
+	lateral_error = 0.7754344096988008
+	heading_error = -0.3651466498474054
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 540030100 ns
+  Inputs:
+	lateral_error = 0.7736919628343207
+	heading_error = -0.3139428921931975
+  Outputs:
+	v_left = 0.10363524953157094
+	v_right = 0.8963647504684291
+
+
+
+
++=controller+=
+  VSI time: 550030100 ns
+  Inputs:
+	lateral_error = 0.7721479068141527
+	heading_error = -0.3372082249430939
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18799646984930474
+
+
+
+
++=controller+=
+  VSI time: 560030100 ns
+  Inputs:
+	lateral_error = 0.7708244914661525
+	heading_error = -0.39720822494309393
+  Outputs:
+	v_left = 0.3856263915032647
+	v_right = 0.6143736084967353
+
+
+
+
++=controller+=
+  VSI time: 570030100 ns
+  Inputs:
+	lateral_error = 0.7688902643012719
+	heading_error = -0.35757174989625096
+  Outputs:
+	v_left = -0.06175503776475222
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 580030100 ns
+  Inputs:
+	lateral_error = 0.7674692556656746
+	heading_error = -0.41697157338871627
+  Outputs:
+	v_left = 0.9844310506713841
+	v_right = 0.015568949328615855
+
+
+
+
++=controller+=
+  VSI time: 590030100 ns
+  Inputs:
+	lateral_error = 0.7654442888427647
+	heading_error = -0.40553421253904265
+  Outputs:
+	v_left = -0.047084233212744575
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 600030100 ns
+  Inputs:
+	lateral_error = 0.7635935551491736
+	heading_error = -0.3524464606508051
+  Outputs:
+	v_left = 0.6346343134146742
+	v_right = 0.36536568658532576
+
+
+
+
++=controller+=
+  VSI time: 610030100 ns
+  Inputs:
+	lateral_error = 0.7618675805622179
+	heading_error = -0.40088956571794343
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 620030100 ns
+  Inputs:
+	lateral_error = 0.7600082630751072
+	heading_error = -0.3485353540573062
+  Outputs:
+	v_left = 0.046970068970465406
+	v_right = 0.9530299310295346
+
+
+
+
++=controller+=
+  VSI time: 630030100 ns
+  Inputs:
+	lateral_error = 0.7583006551164833
+	heading_error = -0.3619987853987734
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17279468326737613
+
+
+
+
++=controller+=
+  VSI time: 640030100 ns
+  Inputs:
+	lateral_error = 0.7568840783755125
+	heading_error = -0.42199878539877345
+  Outputs:
+	v_left = 0.46477316046894857
+	v_right = 0.5352268395310514
+
+
+
+
++=controller+=
+  VSI time: 650030100 ns
+  Inputs:
+	lateral_error = 0.7548361548447344
+	heading_error = -0.37669579229581984
+  Outputs:
+	v_left = -0.07927494799834855
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 660030100 ns
+  Inputs:
+	lateral_error = 0.7533147176754681
+	heading_error = -0.4353355264591885
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02543600521107836
+
+
+
+
++=controller+=
+  VSI time: 670030100 ns
+  Inputs:
+	lateral_error = 0.7512061443927961
+	heading_error = -0.4318128425060834
+  Outputs:
+	v_left = -0.056359783117249984
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 680030100 ns
+  Inputs:
+	lateral_error = 0.7492794446864334
+	heading_error = -0.37784909510616593
+  Outputs:
+	v_left = 0.5240768817812782
+	v_right = 0.4759231182187218
+
+
+
+
++=controller+=
+  VSI time: 690030100 ns
+  Inputs:
+	lateral_error = 0.747481753496111
+	heading_error = -0.4291208953667196
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1917043778831342
+
+
+
+
++=controller+=
+  VSI time: 700030100 ns
+  Inputs:
+	lateral_error = 0.7455186441848298
+	heading_error = -0.37630290621085694
+  Outputs:
+	v_left = -0.010264817373735524
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 710030100 ns
+  Inputs:
+	lateral_error = 0.7436812212747435
+	heading_error = -0.3787105943889846
+  Outputs:
+	v_left = 1.0
+	v_right = -0.14846472290560853
+
+
+
+
++=controller+=
+  VSI time: 720030100 ns
+  Inputs:
+	lateral_error = 0.7421869949301618
+	heading_error = -0.4382958132831414
+  Outputs:
+	v_left = 0.5659143745072523
+	v_right = 0.43408562549274765
+
+
+
+
++=controller+=
+  VSI time: 730030100 ns
+  Inputs:
+	lateral_error = 0.740086791810068
+	heading_error = -0.3877825724144546
+  Outputs:
+	v_left = -0.08734740157398713
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 740030100 ns
+  Inputs:
+	lateral_error = 0.738476808694233
+	heading_error = -0.44520580855973524
+  Outputs:
+	v_left = 1.0
+	v_right = -0.07221403715506203
+
+
+
+
++=controller+=
+  VSI time: 750030100 ns
+  Inputs:
+	lateral_error = 0.7363235905133123
+	heading_error = -0.45179724601046045
+  Outputs:
+	v_left = -0.05849245536207959
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 760030100 ns
+  Inputs:
+	lateral_error = 0.7343313467558602
+	heading_error = -0.39742987593176116
+  Outputs:
+	v_left = 0.3968028418300474
+	v_right = 0.6031971581699526
+
+
+
+
++=controller+=
+  VSI time: 770030100 ns
+  Inputs:
+	lateral_error = 0.7325358498168129
+	heading_error = -0.45104057778951434
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17442541012307855
+
+
+
+
++=controller+=
+  VSI time: 780030100 ns
+  Inputs:
+	lateral_error = 0.7304838233726391
+	heading_error = -0.3981159550214102
+  Outputs:
+	v_left = -0.050918314034181344
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 790030100 ns
+  Inputs:
+	lateral_error = 0.7285454117133885
+	heading_error = -0.38779623920441475
+  Outputs:
+	v_left = 1.0
+	v_right = -0.11957306701196646
+
+
+
+
++=controller+=
+  VSI time: 800030100 ns
+  Inputs:
+	lateral_error = 0.7269844597969537
+	heading_error = -0.4465175097105689
+  Outputs:
+	v_left = 0.6927683537668
+	v_right = 0.3072316462332
+
+
+
+
++=controller+=
+  VSI time: 810030100 ns
+  Inputs:
+	lateral_error = 0.724935263814613
+	heading_error = -0.39397159400885995
+  Outputs:
+	v_left = -0.08582369206633933
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 820030100 ns
+  Inputs:
+	lateral_error = 0.7232454658154834
+	heading_error = -0.4499502473594581
+  Outputs:
+	v_left = 1.0
+	v_right = -0.09710789986581558
+
+
+
+
++=controller+=
+  VSI time: 830030100 ns
+  Inputs:
+	lateral_error = 0.7210708621457239
+	heading_error = -0.469227082736138
+  Outputs:
+	v_left = -0.06253715853953279
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 840030100 ns
+  Inputs:
+	lateral_error = 0.7190039230357604
+	heading_error = -0.4149358981328213
+  Outputs:
+	v_left = 0.24456689564847578
+	v_right = 0.7554331043515242
+
+
+
+
++=controller+=
+  VSI time: 850030100 ns
+  Inputs:
+	lateral_error = 0.71718400284576
+	heading_error = -0.4697912931261121
+  Outputs:
+	v_left = 1.0
+	v_right = -0.15025065255639647
+
+
+
+
++=controller+=
+  VSI time: 860030100 ns
+  Inputs:
+	lateral_error = 0.7150620547709328
+	heading_error = -0.4166644351991353
+  Outputs:
+	v_left = -0.07920248059164159
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 870030100 ns
+  Inputs:
+	lateral_error = 0.7130384921558822
+	heading_error = -0.39112112476398275
+  Outputs:
+	v_left = 1.0
+	v_right = -0.09829644888151523
+
+
+
+
++=controller+=
+  VSI time: 880030100 ns
+  Inputs:
+	lateral_error = 0.7114187631948274
+	heading_error = -0.4486336573918024
+  Outputs:
+	v_left = 0.8513171041935292
+	v_right = 0.14868289580647082
+
+
+
+
++=controller+=
+  VSI time: 890030100 ns
+  Inputs:
+	lateral_error = 0.7094218535127048
+	heading_error = -0.3946735333622202
+  Outputs:
+	v_left = -0.07650832104263472
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 900030100 ns
+  Inputs:
+	lateral_error = 0.7076882975941627
+	heading_error = -0.44958835580629586
+  Outputs:
+	v_left = 1.0
+	v_right = -0.11872543266085822
+
+
+
+
++=controller+=
+  VSI time: 910030100 ns
+  Inputs:
+	lateral_error = 0.7055153234269247
+	heading_error = -0.4847200662256488
+  Outputs:
+	v_left = -0.06342952404986613
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 920030100 ns
+  Inputs:
+	lateral_error = 0.7033637693236068
+	heading_error = -0.43089465017351714
+  Outputs:
+	v_left = 0.05790565018035709
+	v_right = 0.9420943498196429
+
+
+
+
++=controller+=
+  VSI time: 930030100 ns
+  Inputs:
+	lateral_error = 0.7015232985885305
+	heading_error = -0.4868309218065603
+  Outputs:
+	v_left = 1.0
+	v_right = -0.11973436484986533
+
+
+
+
++=controller+=
+  VSI time: 940030100 ns
+  Inputs:
+	lateral_error = 0.6993325321797099
+	heading_error = -0.433659445604067
+  Outputs:
+	v_left = -0.10331632167719129
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 950030100 ns
+  Inputs:
+	lateral_error = 0.6972315606074414
+	heading_error = -0.3894500106221028
+  Outputs:
+	v_left = 1.0
+	v_right = -0.07603558439041902
+
+
+
+
++=controller+=
+  VSI time: 960030100 ns
+  Inputs:
+	lateral_error = 0.695560465789162
+	heading_error = -0.4454367288645962
+  Outputs:
+	v_left = 1.0
+	v_right = -0.05215648969265185
+
+
+
+
++=controller+=
+  VSI time: 970030100 ns
+  Inputs:
+	lateral_error = 0.693628775849727
+	heading_error = -0.39027091278073645
+  Outputs:
+	v_left = -0.05964129478997249
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 980030100 ns
+  Inputs:
+	lateral_error = 0.6918712154928273
+	heading_error = -0.44407269200025734
+  Outputs:
+	v_left = 1.0
+	v_right = -0.14254077102980667
+
+
+
+
++=controller+=
+  VSI time: 990030100 ns
+  Inputs:
+	lateral_error = 0.6898351495438938
+	heading_error = -0.49668051648489
+  Outputs:
+	v_left = -0.05903582846793454
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1000030100 ns
+  Inputs:
+	lateral_error = 0.6875946989370975
+	heading_error = -0.44369845174539124
+  Outputs:
+	v_left = -0.132006228620832
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1010030100 ns
+  Inputs:
+	lateral_error = 0.6857542367664714
+	heading_error = -0.5008254902968816
+  Outputs:
+	v_left = 1.0
+	v_right = -0.07508250042926767
+
+
+
+
++=controller+=
+  VSI time: 1020030100 ns
+  Inputs:
+	lateral_error = 0.6834952179205805
+	heading_error = -0.4478736988734848
+  Outputs:
+	v_left = -0.123907938919112
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1030030100 ns
+  Inputs:
+	lateral_error = 0.6816157947083278
+	heading_error = -0.39127338744244344
+  Outputs:
+	v_left = 1.0
+	v_right = -0.051182665249130954
+
+
+
+
++=controller+=
+  VSI time: 1040030100 ns
+  Inputs:
+	lateral_error = 0.6798521348546422
+	heading_error = -0.4450275124639069
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1050030100 ns
+  Inputs:
+	lateral_error = 0.6779664224173886
+	heading_error = -0.3888321155179515
+  Outputs:
+	v_left = -0.06773156731327756
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1060030100 ns
+  Inputs:
+	lateral_error = 0.676167901353027
+	heading_error = -0.44139124878040814
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1636872897161572
+
+
+
+
++=controller+=
+  VSI time: 1070030100 ns
+  Inputs:
+	lateral_error = 0.6744591102046689
+	heading_error = -0.5013912487804082
+  Outputs:
+	v_left = -0.055554860689484675
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1080030100 ns
+  Inputs:
+	lateral_error = 0.6722186546930464
+	heading_error = -0.44800467041474423
+  Outputs:
+	v_left = -0.18443164562365122
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1090030100 ns
+  Inputs:
+	lateral_error = 0.6704073352533614
+	heading_error = -0.5061890349005522
+  Outputs:
+	v_left = 1.0
+	v_right = -0.043271700867358764
+
+
+
+
++=controller+=
+  VSI time: 1100030100 ns
+  Inputs:
+	lateral_error = 0.668117774933239
+	heading_error = -0.453411291866078
+  Outputs:
+	v_left = -0.14089888783534532
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1110030100 ns
+  Inputs:
+	lateral_error = 0.6663315387963793
+	heading_error = -0.39418970958489563
+  Outputs:
+	v_left = 1.0
+	v_right = -0.035147457391113135
+
+
+
+
++=controller+=
+  VSI time: 1120030100 ns
+  Inputs:
+	lateral_error = 0.6644943326432806
+	heading_error = -0.44635329462826334
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1130030100 ns
+  Inputs:
+	lateral_error = 0.6626400531673559
+	heading_error = -0.389308350236496
+  Outputs:
+	v_left = -0.07098041433227309
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1140030100 ns
+  Inputs:
+	lateral_error = 0.6608090109550165
+	heading_error = -0.4410657231060515
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17824661965479371
+
+
+
+
++=controller+=
+  VSI time: 1150030100 ns
+  Inputs:
+	lateral_error = 0.6591013972040065
+	heading_error = -0.5010657231060516
+  Outputs:
+	v_left = -0.05660450954944751
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1160030100 ns
+  Inputs:
+	lateral_error = 0.6568700755189767
+	heading_error = -0.44751670238943797
+  Outputs:
+	v_left = -0.1852797836492016
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1170030100 ns
+  Inputs:
+	lateral_error = 0.6550920965539617
+	heading_error = -0.5064290333721777
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04217183114431866
+
+
+
+
++=controller+=
+  VSI time: 1180030100 ns
+  Inputs:
+	lateral_error = 0.652804090794414
+	heading_error = -0.4535988078947053
+  Outputs:
+	v_left = -0.15062590562493428
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1190030100 ns
+  Inputs:
+	lateral_error = 0.6510190255752407
+	heading_error = -0.3943348187122453
+  Outputs:
+	v_left = 1.0
+	v_right = -0.028696218419279385
+
+
+
+
++=controller+=
+  VSI time: 1200030100 ns
+  Inputs:
+	lateral_error = 0.64917906570962
+	heading_error = -0.44644341026946144
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1210030100 ns
+  Inputs:
+	lateral_error = 0.6473454357725416
+	heading_error = -0.3889121149882149
+  Outputs:
+	v_left = -0.07495376642088458
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1220030100 ns
+  Inputs:
+	lateral_error = 0.6455039312411655
+	heading_error = -0.440346925909179
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18211535163154524
+
+
+
+
++=controller+=
+  VSI time: 1230030100 ns
+  Inputs:
+	lateral_error = 0.6437989179562833
+	heading_error = -0.5003469259091791
+  Outputs:
+	v_left = -0.059497411687878476
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1240030100 ns
+  Inputs:
+	lateral_error = 0.6415800559659447
+	heading_error = -0.4465992375881349
+  Outputs:
+	v_left = -0.1876734890846261
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1250030100 ns
+  Inputs:
+	lateral_error = 0.6398138307221207
+	heading_error = -0.5057050051697121
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04196376277445024
+
+
+
+
++=controller+=
+  VSI time: 1260030100 ns
+  Inputs:
+	lateral_error = 0.6375358190760391
+	heading_error = -0.4527301345853183
+  Outputs:
+	v_left = -0.15624608143794205
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1270030100 ns
+  Inputs:
+	lateral_error = 0.6357591706180418
+	heading_error = -0.3933464601310872
+  Outputs:
+	v_left = 1.0
+	v_right = -0.026788949856928257
+
+
+
+
++=controller+=
+  VSI time: 1280030100 ns
+  Inputs:
+	lateral_error = 0.6339231830185625
+	heading_error = -0.44544464826980956
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1290030100 ns
+  Inputs:
+	lateral_error = 0.6321054874027368
+	heading_error = -0.38763234419791237
+  Outputs:
+	v_left = -0.07856405419429047
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1300030100 ns
+  Inputs:
+	lateral_error = 0.6302661307549338
+	heading_error = -0.43897179169075873
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18330275363072657
+
+
+
+
++=controller+=
+  VSI time: 1310030100 ns
+  Inputs:
+	lateral_error = 0.6285660948873426
+	heading_error = -0.4989717916907588
+  Outputs:
+	v_left = -0.0627307136573877
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1320030100 ns
+  Inputs:
+	lateral_error = 0.6263614536630373
+	heading_error = -0.44504358898104446
+  Outputs:
+	v_left = -0.1904652137174534
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1330030100 ns
+  Inputs:
+	lateral_error = 0.6246035241769198
+	heading_error = -0.504208726662581
+  Outputs:
+	v_left = 1.0
+	v_right = -0.041982875304179657
+
+
+
+
++=controller+=
+  VSI time: 1340030100 ns
+  Inputs:
+	lateral_error = 0.6223394809201143
+	heading_error = -0.4510721909797115
+  Outputs:
+	v_left = -0.16033177179606373
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1350030100 ns
+  Inputs:
+	lateral_error = 0.6205749754474637
+	heading_error = -0.39154893029383864
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02635442108216901
+
+
+
+
++=controller+=
+  VSI time: 1360030100 ns
+  Inputs:
+	lateral_error = 0.6187469802024863
+	heading_error = -0.4436480740590474
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1370030100 ns
+  Inputs:
+	lateral_error = 0.6169448959035067
+	heading_error = -0.3856314854692444
+  Outputs:
+	v_left = -0.0816301634671821
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1380030100 ns
+  Inputs:
+	lateral_error = 0.6151137396248475
+	heading_error = -0.4369492065233529
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18378951833985913
+
+
+
+
++=controller+=
+  VSI time: 1390030100 ns
+  Inputs:
+	lateral_error = 0.6134210305180666
+	heading_error = -0.49694920652335295
+  Outputs:
+	v_left = -0.06566027765591542
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1400030100 ns
+  Inputs:
+	lateral_error = 0.611231884840363
+	heading_error = -0.44286769834999395
+  Outputs:
+	v_left = -0.1930768629128493
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1410030100 ns
+  Inputs:
+	lateral_error = 0.6094830222083931
+	heading_error = -0.5020571742669868
+  Outputs:
+	v_left = 1.0
+	v_right = -0.042079199725679195
+
+
+
+
++=controller+=
+  VSI time: 1420030100 ns
+  Inputs:
+	lateral_error = 0.607234861324851
+	heading_error = -0.44877416038419105
+  Outputs:
+	v_left = -0.16358326676222268
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1430030100 ns
+  Inputs:
+	lateral_error = 0.6054843972995723
+	heading_error = -0.38912031723854845
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0263504659349878
+
+
+
+
++=controller+=
+  VSI time: 1440030100 ns
+  Inputs:
+	lateral_error = 0.6036673429982925
+	heading_error = -0.4412242772248325
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1450030100 ns
+  Inputs:
+	lateral_error = 0.601881397499314
+	heading_error = -0.38304511388672147
+  Outputs:
+	v_left = -0.08414325808935186
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1460030100 ns
+  Inputs:
+	lateral_error = 0.600061906314664
+	heading_error = -0.434362637183471
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18404313141513418
+
+
+
+
++=controller+=
+  VSI time: 1470030100 ns
+  Inputs:
+	lateral_error = 0.5983785770723987
+	heading_error = -0.49436263718347107
+  Outputs:
+	v_left = -0.06810658098163247
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1480030100 ns
+  Inputs:
+	lateral_error = 0.5962058411458938
+	heading_error = -0.4401554742790035
+  Outputs:
+	v_left = -0.19536825409103742
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1490030100 ns
+  Inputs:
+	lateral_error = 0.5944675261209253
+	heading_error = -0.49935763084976026
+  Outputs:
+	v_left = 1.0
+	v_right = -0.042179363281561355
+
+
+
+
++=controller+=
+  VSI time: 1500030100 ns
+  Inputs:
+	lateral_error = 0.5922362857505005
+	heading_error = -0.4459523018006788
+  Outputs:
+	v_left = -0.16623081164257303
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1510030100 ns
+  Inputs:
+	lateral_error = 0.5905010280201419
+	heading_error = -0.3861838890961269
+  Outputs:
+	v_left = 1.0
+	v_right = -0.026443268668914
+
+
+
+
++=controller+=
+  VSI time: 1520030100 ns
+  Inputs:
+	lateral_error = 0.588697183093186
+	heading_error = -0.4382928572602047
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1530030100 ns
+  Inputs:
+	lateral_error = 0.586927948617412
+	heading_error = -0.3799813166780761
+  Outputs:
+	v_left = -0.08615470679405135
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1540030100 ns
+  Inputs:
+	lateral_error = 0.5851224724774764
+	heading_error = -0.43130348011152186
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18417622485500507
+
+
+
+
++=controller+=
+  VSI time: 1550030100 ns
+  Inputs:
+	lateral_error = 0.5834502514105717
+	heading_error = -0.4913034801115219
+  Outputs:
+	v_left = -0.0700681423578039
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1560030100 ns
+  Inputs:
+	lateral_error = 0.5812946018924682
+	heading_error = -0.43699574477181935
+  Outputs:
+	v_left = -0.197339856579266
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1570030100 ns
+  Inputs:
+	lateral_error = 0.5795682394777348
+	heading_error = -0.4962045560145696
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04225236376316266
+
+
+
+
++=controller+=
+  VSI time: 1580030100 ns
+  Inputs:
+	lateral_error = 0.5773545772449835
+	heading_error = -0.44270114889667944
+  Outputs:
+	v_left = -0.16839150649937917
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1590030100 ns
+  Inputs:
+	lateral_error = 0.5756353523514285
+	heading_error = -0.382834156067716
+  Outputs:
+	v_left = 1.0
+	v_right = -0.026531577151924446
+
+
+
+
++=controller+=
+  VSI time: 1600030100 ns
+  Inputs:
+	lateral_error = 0.5738465146224426
+	heading_error = -0.43494677425587414
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1610030100 ns
+  Inputs:
+	lateral_error = 0.5720944729836512
+	heading_error = -0.37652719893090536
+  Outputs:
+	v_left = -0.08773306759278687
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1620030100 ns
+  Inputs:
+	lateral_error = 0.5703047845241912
+	heading_error = -0.4278537777885014
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18422225875905085
+
+
+
+
++=controller+=
+  VSI time: 1630030100 ns
+  Inputs:
+	lateral_error = 0.5686451085188466
+	heading_error = -0.4878537777885015
+  Outputs:
+	v_left = -0.07159910310333306
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1640030100 ns
+  Inputs:
+	lateral_error = 0.5665070689988201
+	heading_error = -0.43346712440886215
+  Outputs:
+	v_left = -0.19902993787075596
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1650030100 ns
+  Inputs:
+	lateral_error = 0.5647938550297217
+	heading_error = -0.4926782373468148
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0422891073853523
+
+
+
+
++=controller+=
+  VSI time: 1660030100 ns
+  Inputs:
+	lateral_error = 0.5625982458886069
+	heading_error = -0.43909828219164826
+  Outputs:
+	v_left = -0.17014985450954778
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1670030100 ns
+  Inputs:
+	lateral_error = 0.5608956900624561
+	heading_error = -0.3791467852981105
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02658874189890925
+
+
+
+
++=controller+=
+  VSI time: 1680030100 ns
+  Inputs:
+	lateral_error = 0.55912331205191
+	heading_error = -0.43126124066737814
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1690030100 ns
+  Inputs:
+	lateral_error = 0.5573888551457045
+	heading_error = -0.37275374794190075
+  Outputs:
+	v_left = -0.0889462514525291
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1700030100 ns
+  Inputs:
+	lateral_error = 0.5556163635181706
+	heading_error = -0.4240831850368463
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18419755186611908
+
+
+
+
++=controller+=
+  VSI time: 1710030100 ns
+  Inputs:
+	lateral_error = 0.5539704220996505
+	heading_error = -0.48408318503684633
+  Outputs:
+	v_left = -0.07276419512118382
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1720030100 ns
+  Inputs:
+	lateral_error = 0.5518504133263623
+	heading_error = -0.42963587246421975
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1730030100 ns
+  Inputs:
+	lateral_error = 0.5501513424024372
+	heading_error = -0.48884575005752584
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04229025197479708
+
+
+
+
++=controller+=
+  VSI time: 1740030100 ns
+  Inputs:
+	lateral_error = 0.5479741596198773
+	heading_error = -0.4352075403014668
+  Outputs:
+	v_left = -0.17157494557428
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1750030100 ns
+  Inputs:
+	lateral_error = 0.546287765202391
+	heading_error = -0.37520754030146675
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02661149009493513
+
+
+
+
++=controller+=
+  VSI time: 1760030100 ns
+  Inputs:
+	lateral_error = 0.5445329266283201
+	heading_error = -0.42732205290020664
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1770030100 ns
+  Inputs:
+	lateral_error = 0.5428162843265877
+	heading_error = -0.3687433056214928
+  Outputs:
+	v_left = -0.08979627780328692
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1780030100 ns
+  Inputs:
+	lateral_error = 0.5410620265382659
+	heading_error = -0.4200738801262398
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1840945428144556
+
+
+
+
++=controller+=
+  VSI time: 1790030100 ns
+  Inputs:
+	lateral_error = 0.5394307148939744
+	heading_error = -0.48007388012623986
+  Outputs:
+	v_left = -0.07364702219744035
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1800030100 ns
+  Inputs:
+	lateral_error = 0.5373288510435046
+	heading_error = -0.4255840662360755
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1810030100 ns
+  Inputs:
+	lateral_error = 0.535644606705979
+	heading_error = -0.48478879337679803
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04218951476813648
+
+
+
+
++=controller+=
+  VSI time: 1820030100 ns
+  Inputs:
+	lateral_error = 0.5334861046854809
+	heading_error = -0.43110644226692596
+  Outputs:
+	v_left = -0.172729262186041
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1830030100 ns
+  Inputs:
+	lateral_error = 0.5318145996247647
+	heading_error = -0.3711064422669259
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02660223488261626
+
+
+
+
++=controller+=
+  VSI time: 1840030100 ns
+  Inputs:
+	lateral_error = 0.5300778651985452
+	heading_error = -0.423215918005333
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1850030100 ns
+  Inputs:
+	lateral_error = 0.5283790864186952
+	heading_error = -0.36457945489603105
+  Outputs:
+	v_left = -0.09029840388377874
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1860030100 ns
+  Inputs:
+	lateral_error = 0.526643730298349
+	heading_error = -0.415909566640162
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18391006498186047
+
+
+
+
++=controller+=
+  VSI time: 1870030100 ns
+  Inputs:
+	lateral_error = 0.5250276418072849
+	heading_error = -0.47590956664016204
+  Outputs:
+	v_left = -0.07433515188680362
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1880030100 ns
+  Inputs:
+	lateral_error = 0.5229437559352953
+	heading_error = -0.421394646445973
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1890030100 ns
+  Inputs:
+	lateral_error = 0.5212747153543862
+	heading_error = -0.48059014969506597
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04192885290084125
+
+
+
+
++=controller+=
+  VSI time: 1900030100 ns
+  Inputs:
+	lateral_error = 0.5191350292331556
+	heading_error = -0.4268733921007257
+  Outputs:
+	v_left = -0.17368191542403144
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1910030100 ns
+  Inputs:
+	lateral_error = 0.5174789220732716
+	heading_error = -0.36687339210072567
+  Outputs:
+	v_left = 1.0
+	v_right = -0.026562826959239283
+
+
+
+
++=controller+=
+  VSI time: 1920030100 ns
+  Inputs:
+	lateral_error = 0.5157606279515605
+	heading_error = -0.41896983474576777
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 1930030100 ns
+  Inputs:
+	lateral_error = 0.5140798159703482
+	heading_error = -0.36028573897456617
+  Outputs:
+	v_left = -0.09061983449486954
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1940030100 ns
+  Inputs:
+	lateral_error = 0.5123639302779435
+	heading_error = -0.4116138803225282
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18369116710481725
+
+
+
+
++=controller+=
+  VSI time: 1950030100 ns
+  Inputs:
+	lateral_error = 0.5107635745520216
+	heading_error = -0.47161388032252827
+  Outputs:
+	v_left = -0.07486108461408025
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1960030100 ns
+  Inputs:
+	lateral_error = 0.5086978057456412
+	heading_error = -0.41708288859778486
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1970030100 ns
+  Inputs:
+	lateral_error = 0.507044392041926
+	heading_error = -0.4762674469530257
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04162860708924232
+
+
+
+
++=controller+=
+  VSI time: 1980030100 ns
+  Inputs:
+	lateral_error = 0.5049236720022087
+	heading_error = -0.42252439272232145
+  Outputs:
+	v_left = -0.17449283664973791
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 1990030100 ns
+  Inputs:
+	lateral_error = 0.5032834154164119
+	heading_error = -0.3625243927223214
+  Outputs:
+	v_left = 1.0
+	v_right = -0.026498157820236568
+
+
+
+
++=controller+=
+  VSI time: 2000030100 ns
+  Inputs:
+	lateral_error = 0.5015840519659465
+	heading_error = -0.4146058230767835
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2010030100 ns
+  Inputs:
+	lateral_error = 0.4999213600919476
+	heading_error = -0.3558811812442966
+  Outputs:
+	v_left = -0.09082149650751548
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2020030100 ns
+  Inputs:
+	lateral_error = 0.4982254397311537
+	heading_error = -0.4072060891353084
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1834494815916342
+
+
+
+
++=controller+=
+  VSI time: 2030030100 ns
+  Inputs:
+	lateral_error = 0.4966412580442413
+	heading_error = -0.4672060891353085
+  Outputs:
+	v_left = -0.07525242069792037
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2040030100 ns
+  Inputs:
+	lateral_error = 0.4945938173358664
+	heading_error = -0.41266501430993285
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2050030100 ns
+  Inputs:
+	lateral_error = 0.49295642104046283
+	heading_error = -0.47183748838951445
+  Outputs:
+	v_left = 1.0
+	v_right = -0.041324952922838665
+
+
+
+
++=controller+=
+  VSI time: 2060030100 ns
+  Inputs:
+	lateral_error = 0.4908548222774446
+	heading_error = -0.4180748673546182
+  Outputs:
+	v_left = -0.1751891446076711
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2070030100 ns
+  Inputs:
+	lateral_error = 0.48923081475260194
+	heading_error = -0.35807486735461813
+  Outputs:
+	v_left = 1.0
+	v_right = -0.026416788026198845
+
+
+
+
++=controller+=
+  VSI time: 2080030100 ns
+  Inputs:
+	lateral_error = 0.4875508716370059
+	heading_error = -0.4101411150007599
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2090030100 ns
+  Inputs:
+	lateral_error = 0.48590645141639877
+	heading_error = -0.35138165777037633
+  Outputs:
+	v_left = -0.0909300616541111
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2100030100 ns
+  Inputs:
+	lateral_error = 0.484230937240431
+	heading_error = -0.40270249717168616
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1831894167133703
+
+
+
+
++=controller+=
+  VSI time: 2110030100 ns
+  Inputs:
+	lateral_error = 0.48266331291261433
+	heading_error = -0.4627024971716862
+  Outputs:
+	v_left = -0.07552993475443337
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2120030100 ns
+  Inputs:
+	lateral_error = 0.48063441397881573
+	heading_error = -0.40815599408898073
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2130030100 ns
+  Inputs:
+	lateral_error = 0.4790133820073873
+	heading_error = -0.46731546492464915
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04102819971498872
+
+
+
+
++=controller+=
+  VSI time: 2140030100 ns
+  Inputs:
+	lateral_error = 0.47693105381588624
+	heading_error = -0.4135389681869275
+  Outputs:
+	v_left = -0.17578782874962007
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2150030100 ns
+  Inputs:
+	lateral_error = 0.4753236438699781
+	heading_error = -0.3535389681869274
+  Outputs:
+	v_left = 1.0
+	v_right = -0.026324285012238047
+
+
+
+
++=controller+=
+  VSI time: 2160030100 ns
+  Inputs:
+	lateral_error = 0.4736635674825681
+	heading_error = -0.40559037817267685
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2170030100 ns
+  Inputs:
+	lateral_error = 0.4720375563139117
+	heading_error = -0.34680098673519577
+  Outputs:
+	v_left = -0.09096073608146904
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2180030100 ns
+  Inputs:
+	lateral_error = 0.47038283828938227
+	heading_error = -0.3981172009858076
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18291380334467844
+
+
+
+
++=controller+=
+  VSI time: 2190030100 ns
+  Inputs:
+	lateral_error = 0.46883210436789774
+	heading_error = -0.45811720098580766
+  Outputs:
+	v_left = -0.07570972529275544
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2200030100 ns
+  Inputs:
+	lateral_error = 0.46682194477856176
+	heading_error = -0.40356916418173405
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2210030100 ns
+  Inputs:
+	lateral_error = 0.46521758266041197
+	heading_error = -0.4627148543489681
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04074093805460188
+
+
+
+
++=controller+=
+  VSI time: 2220030100 ns
+  Inputs:
+	lateral_error = 0.46315466326338767
+	heading_error = -0.4089293680843302
+  Outputs:
+	v_left = -0.1763019141524853
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2230030100 ns
+  Inputs:
+	lateral_error = 0.4615641544598073
+	heading_error = -0.34892936808433017
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02622395810316691
+
+
+
+
++=controller+=
+  VSI time: 2240030100 ns
+  Inputs:
+	lateral_error = 0.45992433999752147
+	heading_error = -0.4009664149870602
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2250030100 ns
+  Inputs:
+	lateral_error = 0.4583168590511302
+	heading_error = -0.3421513192794361
+  Outputs:
+	v_left = -0.09092438232175848
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2260030100 ns
+  Inputs:
+	lateral_error = 0.4566832792144069
+	heading_error = -0.39346251718459424
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18262496008915208
+
+
+
+
++=controller+=
+  VSI time: 2270030100 ns
+  Inputs:
+	lateral_error = 0.455149724641623
+	heading_error = -0.4534625171845943
+  Outputs:
+	v_left = -0.07580489430412962
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2280030100 ns
+  Inputs:
+	lateral_error = 0.45315848207215653
+	heading_error = -0.3989162980685066
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2290030100 ns
+  Inputs:
+	lateral_error = 0.4515710581777423
+	heading_error = -0.4580475460729643
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04046354504788974
+
+
+
+
++=controller+=
+  VSI time: 2300030100 ns
+  Inputs:
+	lateral_error = 0.44952767314690245
+	heading_error = -0.4042573013577577
+  Outputs:
+	v_left = -0.17674226015965977
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2310030100 ns
+  Inputs:
+	lateral_error = 0.44795432900426063
+	heading_error = -0.3442573013577577
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02611794025301961
+
+
+
+
++=controller+=
+  VSI time: 2320030100 ns
+  Inputs:
+	lateral_error = 0.4463351225179128
+	heading_error = -0.39628047861015236
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2330030100 ns
+  Inputs:
+	lateral_error = 0.44474627727044647
+	heading_error = -0.33744336560216937
+  Outputs:
+	v_left = -0.09082977480225474
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2340030100 ns
+  Inputs:
+	lateral_error = 0.4431341337212755
+	heading_error = -0.38874926261482035
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1823248974955134
+
+
+
+
++=controller+=
+  VSI time: 2350030100 ns
+  Inputs:
+	lateral_error = 0.44161800852242344
+	heading_error = -0.4487492626148204
+  Outputs:
+	v_left = -0.07582648168167361
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2360030100 ns
+  Inputs:
+	lateral_error = 0.4396458411460926
+	heading_error = -0.3942077738747076
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2370030100 ns
+  Inputs:
+	lateral_error = 0.4380755907734241
+	heading_error = -0.45332401874948314
+  Outputs:
+	v_left = 1.0
+	v_right = -0.04019581090237789
+
+
+
+
++=controller+=
+  VSI time: 2380030100 ns
+  Inputs:
+	lateral_error = 0.4360518530298561
+	heading_error = -0.39953269466539965
+  Outputs:
+	v_left = -0.17711818548183766
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2390030100 ns
+  Inputs:
+	lateral_error = 0.43449590149750067
+	heading_error = -0.3395326946653996
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02600778142923066
+
+
+
+
++=controller+=
+  VSI time: 2400030100 ns
+  Inputs:
+	lateral_error = 0.4328976043611729
+	heading_error = -0.39154248521051827
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2410030100 ns
+  Inputs:
+	lateral_error = 0.4313274857030388
+	heading_error = -0.33268657593642637
+  Outputs:
+	v_left = -0.09068436862004525
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2420030100 ns
+  Inputs:
+	lateral_error = 0.4297370369080762
+	heading_error = -0.383986965007888
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1820153753793674
+
+
+
+
++=controller+=
+  VSI time: 2430030100 ns
+  Inputs:
+	lateral_error = 0.42823855664824306
+	heading_error = -0.44398696500788803
+  Outputs:
+	v_left = -0.07578396576896484
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2440030100 ns
+  Inputs:
+	lateral_error = 0.4262856045385277
+	heading_error = -0.389452746576886
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2450030100 ns
+  Inputs:
+	lateral_error = 0.42473273353517077
+	heading_error = -0.4485535153458544
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03993740380019062
+
+
+
+
++=controller+=
+  VSI time: 2460030100 ns
+  Inputs:
+	lateral_error = 0.42272874390901843
+	heading_error = -0.394764317057406
+  Outputs:
+	v_left = -0.177437762333153
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2470030100 ns
+  Inputs:
+	lateral_error = 0.42119038133471204
+	heading_error = -0.33476431705740595
+  Outputs:
+	v_left = 1.0
+	v_right = -0.025894714692360488
+
+
+
+
++=controller+=
+  VSI time: 2480030100 ns
+  Inputs:
+	lateral_error = 0.41961325492502327
+	heading_error = -0.3867611872474157
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2490030100 ns
+  Inputs:
+	lateral_error = 0.4180619403043659
+	heading_error = -0.32788929913075826
+  Outputs:
+	v_left = -0.09049461468720232
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2500030100 ns
+  Inputs:
+	lateral_error = 0.41649340920717853
+	heading_error = -0.37918403486537633
+  Outputs:
+	v_left = 1.0
+	v_right = -0.181697936227186
+
+
+
+
++=controller+=
+  VSI time: 2510030100 ns
+  Inputs:
+	lateral_error = 0.4150127588549648
+	heading_error = -0.4391840348653764
+  Outputs:
+	v_left = -0.07568555683799749
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2520030100 ns
+  Inputs:
+	lateral_error = 0.4130791455056468
+	heading_error = -0.38465930413101646
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2530030100 ns
+  Inputs:
+	lateral_error = 0.4115438334320135
+	heading_error = -0.44374420094237577
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03968799527617217
+
+
+
+
++=controller+=
+  VSI time: 2540030100 ns
+  Inputs:
+	lateral_error = 0.4095596813607493
+	heading_error = -0.3899599231004758
+  Outputs:
+	v_left = -0.17770800514067153
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2550030100 ns
+  Inputs:
+	lateral_error = 0.4080390759714277
+	heading_error = -0.3299599231004757
+  Outputs:
+	v_left = 1.0
+	v_right = -0.025779770109676914
+
+
+
+
++=controller+=
+  VSI time: 2560030100 ns
+  Inputs:
+	lateral_error = 0.40648334597008223
+	heading_error = -0.3819443228642845
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2570030100 ns
+  Inputs:
+	lateral_error = 0.4049509004433865
+	heading_error = -0.32305892260725066
+  Outputs:
+	v_left = -0.0902661312435723
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2580030100 ns
+  Inputs:
+	lateral_error = 0.40340447818640524
+	heading_error = -0.37434791111273436
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18137393282909153
+
+
+
+
++=controller+=
+  VSI time: 2590030100 ns
+  Inputs:
+	lateral_error = 0.40194181547610086
+	heading_error = -0.4343479111127344
+  Outputs:
+	v_left = -0.0755383953665999
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2600030100 ns
+  Inputs:
+	lateral_error = 0.4000276492101483
+	heading_error = -0.3798346045505556
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2610030100 ns
+  Inputs:
+	lateral_error = 0.3985100520975182
+	heading_error = -0.43890330119201026
+  Outputs:
+	v_left = 1.0
+	v_right = -0.039447289307304234
+
+
+
+
++=controller+=
+  VSI time: 2620030100 ns
+  Inputs:
+	lateral_error = 0.39654581631307934
+	heading_error = -0.3851263814236803
+  Outputs:
+	v_left = -0.17793501635923514
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2630030100 ns
+  Inputs:
+	lateral_error = 0.3950431112576661
+	heading_error = -0.3251263814236802
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02566382677995127
+
+
+
+
++=controller+=
+  VSI time: 2640030100 ns
+  Inputs:
+	lateral_error = 0.3935089714657718
+	heading_error = -0.37709874588904535
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2650030100 ns
+  Inputs:
+	lateral_error = 0.3919954486345569
+	heading_error = -0.3182019950710835
+  Outputs:
+	v_left = -0.09000382385891526
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2660030100 ns
+  Inputs:
+	lateral_error = 0.3904712978563972
+	heading_error = -0.3694851864100812
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18104455246141238
+
+
+
+
++=controller+=
+  VSI time: 2670030100 ns
+  Inputs:
+	lateral_error = 0.38902675621928373
+	heading_error = -0.42948518641008127
+  Outputs:
+	v_left = -0.07534870330260857
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2680030100 ns
+  Inputs:
+	lateral_error = 0.38713213144385605
+	heading_error = -0.37498499521713535
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2690030100 ns
+  Inputs:
+	lateral_error = 0.38563238420067636
+	heading_error = -0.43403722284020585
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03921502537194366
+
+
+
+
++=controller+=
+  VSI time: 2700030100 ns
+  Inputs:
+	lateral_error = 0.38368813336156704
+	heading_error = -0.3802697876750756
+  Outputs:
+	v_left = -0.17812410823289937
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2710030100 ns
+  Inputs:
+	lateral_error = 0.3822034493688306
+	heading_error = -0.3202697876750755
+  Outputs:
+	v_left = 1.0
+	v_right = -0.025547640947489625
+
+
+
+
++=controller+=
+  VSI time: 2720030100 ns
+  Inputs:
+	lateral_error = 0.38069106505223044
+	heading_error = -0.37223053894367286
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2730030100 ns
+  Inputs:
+	lateral_error = 0.37919650789338116
+	heading_error = -0.31332433353202793
+  Outputs:
+	v_left = -0.08971198166235328
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2740030100 ns
+  Inputs:
+	lateral_error = 0.37769476562597615
+	heading_error = -0.36460171557940235
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1807108381282162
+
+
+
+
++=controller+=
+  VSI time: 2750030100 ns
+  Inputs:
+	lateral_error = 0.37626845674903914
+	heading_error = -0.4246017155794024
+  Outputs:
+	v_left = -0.07512190818121656
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2760030100 ns
+  Inputs:
+	lateral_error = 0.37439345506274957
+	heading_error = -0.37011611649628495
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2770030100 ns
+  Inputs:
+	lateral_error = 0.3729116735764388
+	heading_error = -0.429151658402696
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03899097520275785
+
+
+
+
++=controller+=
+  VSI time: 2780030100 ns
+  Inputs:
+	lateral_error = 0.37098746683798456
+	heading_error = -0.37539556299363497
+  Outputs:
+	v_left = -0.17827990728740883
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2790030100 ns
+  Inputs:
+	lateral_error = 0.36952090453877806
+	heading_error = -0.3153955629936349
+  Outputs:
+	v_left = 1.0
+	v_right = -0.025431864676542015
+
+
+
+
++=controller+=
+  VSI time: 2800030100 ns
+  Inputs:
+	lateral_error = 0.36803041535408154
+	heading_error = -0.3673451117537727
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2810030100 ns
+  Inputs:
+	lateral_error = 0.3665548569569926
+	heading_error = -0.30843111638940224
+  Outputs:
+	v_left = -0.0893943587857754
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2820030100 ns
+  Inputs:
+	lateral_error = 0.3650756371648612
+	heading_error = -0.3597027096232295
+  Outputs:
+	v_left = 1.0
+	v_right = -0.18037370722256718
+
+
+
+
++=controller+=
+  VSI time: 2830030100 ns
+  Inputs:
+	lateral_error = 0.36366765322649086
+	heading_error = -0.41970270962322953
+  Outputs:
+	v_left = -0.0748627485749419
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2840030100 ns
+  Inputs:
+	lateral_error = 0.3618123443955542
+	heading_error = -0.36523299168394097
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2850030100 ns
+  Inputs:
+	lateral_error = 0.3603486273706536
+	heading_error = -0.4242516770450693
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03877493853057257
+
+
+
+
++=controller+=
+  VSI time: 2860030100 ns
+  Inputs:
+	lateral_error = 0.35844451489788537
+	heading_error = -0.37050853961632235
+  Outputs:
+	v_left = -0.17840644480908474
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2870030100 ns
+  Inputs:
+	lateral_error = 0.35699615685558134
+	heading_error = -0.3105085396163223
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0253170603067856
+
+
+
+
++=controller+=
+  VSI time: 2880030100 ns
+  Inputs:
+	lateral_error = 0.3555276794090745
+	heading_error = -0.36244728654285074
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2890030100 ns
+  Inputs:
+	lateral_error = 0.35407114363242453
+	heading_error = -0.30352696430239634
+  Outputs:
+	v_left = -0.08905424455530542
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2900030100 ns
+  Inputs:
+	lateral_error = 0.3526145394380601
+	heading_error = -0.3547928173177355
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1800339679133971
+
+
+
+
++=controller+=
+  VSI time: 2910030100 ns
+  Inputs:
+	lateral_error = 0.35122495506341006
+	heading_error = -0.41479281731773554
+  Outputs:
+	v_left = -0.07457536498567907
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2920030100 ns
+  Inputs:
+	lateral_error = 0.34938939788371715
+	heading_error = -0.3603401050899704
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2930030100 ns
+  Inputs:
+	lateral_error = 0.3479438284515872
+	heading_error = -0.41934180348564
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03856673911239339
+
+
+
+
++=controller+=
+  VSI time: 2940030100 ns
+  Inputs:
+	lateral_error = 0.34605985188166594
+	heading_error = -0.3656130352363558
+  Outputs:
+	v_left = -0.17850723540047964
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2950030100 ns
+  Inputs:
+	lateral_error = 0.3446297643690707
+	heading_error = -0.30561303523635575
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02520371254274678
+
+
+
+
++=controller+=
+  VSI time: 2960030100 ns
+  Inputs:
+	lateral_error = 0.3431833944561423
+	heading_error = -0.35754137219197535
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 2970030100 ns
+  Inputs:
+	lateral_error = 0.34174589651541665
+	heading_error = -0.2986160104219513
+  Outputs:
+	v_left = -0.08869452432166924
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 2980030100 ns
+  Inputs:
+	lateral_error = 0.34031198215123654
+	heading_error = -0.3498761960490886
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1796923335108831
+
+
+
+
++=controller+=
+  VSI time: 2990030100 ns
+  Inputs:
+	lateral_error = 0.33894085612413793
+	heading_error = -0.40987619604908865
+  Outputs:
+	v_left = -0.07426337860747545
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3000030100 ns
+  Inputs:
+	lateral_error = 0.337125099184427
+	heading_error = -0.3554414698330053
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3010030100 ns
+  Inputs:
+	lateral_error = 0.3356977463148052
+	heading_error = -0.4144260865085494
+  Outputs:
+	v_left = 1.0
+	v_right = -0.038366221272950085
+
+
+
+
++=controller+=
+  VSI time: 3020030100 ns
+  Inputs:
+	lateral_error = 0.33383393917561693
+	heading_error = -0.3607129175781756
+  Outputs:
+	v_left = -0.17858534522274605
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3030030100 ns
+  Inputs:
+	lateral_error = 0.3324221737316426
+	heading_error = -0.30071291757817553
+  Outputs:
+	v_left = 1.0
+	v_right = -0.025092238868112626
+
+
+
+
++=controller+=
+  VSI time: 3040030100 ns
+  Inputs:
+	lateral_error = 0.33099798829861593
+	heading_error = -0.35263122864182295
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3050030100 ns
+  Inputs:
+	lateral_error = 0.3295795352937311
+	heading_error = -0.2937019613806857
+  Outputs:
+	v_left = -0.08831773225645523
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3060030100 ns
+  Inputs:
+	lateral_error = 0.32816836781629843
+	heading_error = -0.34495657332409113
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17934943502590883
+
+
+
+
++=controller+=
+  VSI time: 3070030100 ns
+  Inputs:
+	lateral_error = 0.32681574457969753
+	heading_error = -0.4049565733240912
+  Outputs:
+	v_left = -0.07392995969012528
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3080030100 ns
+  Inputs:
+	lateral_error = 0.3250198269388827
+	heading_error = -0.35054068671126837
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3090030100 ns
+  Inputs:
+	lateral_error = 0.3236107466794272
+	heading_error = -0.4095081584625637
+  Outputs:
+	v_left = 1.0
+	v_right = -0.038173246931558324
+
+
+
+
++=controller+=
+  VSI time: 3100030100 ns
+  Inputs:
+	lateral_error = 0.32176713477005886
+	heading_error = -0.35581166047805723
+  Outputs:
+	v_left = -0.17864345127048276
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3110030100 ns
+  Inputs:
+	lateral_error = 0.3203737295650405
+	heading_error = -0.2958116604780572
+  Outputs:
+	v_left = 1.0
+	v_right = -0.024982998591615013
+
+
+
+
++=controller+=
+  VSI time: 3120030100 ns
+  Inputs:
+	lateral_error = 0.31897178842986196
+	heading_error = -0.3477203228246353
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3130030100 ns
+  Inputs:
+	lateral_error = 0.31757237982072734
+	heading_error = -0.2887881502611114
+  Outputs:
+	v_left = -0.08792609718680566
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3140030100 ns
+  Inputs:
+	lateral_error = 0.3161840006183503
+	heading_error = -0.340037300190692
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17900583211653276
+
+
+
+
++=controller+=
+  VSI time: 3150030100 ns
+  Inputs:
+	lateral_error = 0.31484991159099984
+	heading_error = -0.40003730019069206
+  Outputs:
+	v_left = -0.0735778868909368
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3160030100 ns
+  Inputs:
+	lateral_error = 0.3130738633808346
+	heading_error = -0.34564099533135195
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3170030100 ns
+  Inputs:
+	lateral_error = 0.31168309994720256
+	heading_error = -0.40459128693717883
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03798769303939353
+
+
+
+
++=controller+=
+  VSI time: 3180030100 ns
+  Inputs:
+	lateral_error = 0.3098597016850824
+	heading_error = -0.35091239259263185
+  Outputs:
+	v_left = -0.178683892838168
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3190030100 ns
+  Inputs:
+	lateral_error = 0.3084846827198141
+	heading_error = -0.2909123925926318
+  Outputs:
+	v_left = 1.0
+	v_right = -0.024876300706044296
+
+
+
+
++=controller+=
+  VSI time: 3200030100 ns
+  Inputs:
+	lateral_error = 0.3071050300832396
+	heading_error = -0.3428117772446013
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3210030100 ns
+  Inputs:
+	lateral_error = 0.3057246581198487
+	heading_error = -0.2838775826026927
+  Outputs:
+	v_left = -0.08752158238167096
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3220030100 ns
+  Inputs:
+	lateral_error = 0.30435909424054525
+	heading_error = -0.335121397637995
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17866202259835218
+
+
+
+
++=controller+=
+  VSI time: 3230030100 ns
+  Inputs:
+	lateral_error = 0.30304355897401763
+	heading_error = -0.39512139763799503
+  Outputs:
+	v_left = -0.07320959878900923
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3240030100 ns
+  Inputs:
+	lateral_error = 0.30128740193668285
+	heading_error = -0.3407453185189113
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3250030100 ns
+  Inputs:
+	lateral_error = 0.2999149886726327
+	heading_error = -0.3996784196488288
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03780944935683117
+
+
+
+
++=controller+=
+  VSI time: 3260030100 ns
+  Inputs:
+	lateral_error = 0.2981118154113417
+	heading_error = -0.34601793970937855
+  Outputs:
+	v_left = -0.17870871618772788
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3270030100 ns
+  Inputs:
+	lateral_error = 0.29675519757160096
+	heading_error = -0.2860179397093785
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02477241070020364
+
+
+
+
++=controller+=
+  VSI time: 3280030100 ns
+  Inputs:
+	lateral_error = 0.2953978633463388
+	heading_error = -0.33790841217722
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3290030100 ns
+  Inputs:
+	lateral_error = 0.2940365134589799
+	heading_error = -0.2789729763678337
+  Outputs:
+	v_left = -0.08710592008069873
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3300030100 ns
+  Inputs:
+	lateral_error = 0.29269377878221026
+	heading_error = -0.33021159690284385
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17831845068232177
+
+
+
+
++=controller+=
+  VSI time: 3310030100 ns
+  Inputs:
+	lateral_error = 0.29139680597913425
+	heading_error = -0.3902115969028439
+  Outputs:
+	v_left = -0.07282723857879658
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3320030100 ns
+  Inputs:
+	lateral_error = 0.2896605539480084
+	heading_error = -0.33585630089880913
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3330030100 ns
+  Inputs:
+	lateral_error = 0.28830651417240555
+	heading_error = -0.3947722234329252
+  Outputs:
+	v_left = 1.0
+	v_right = -0.037638416513160355
+
+
+
+
++=controller+=
+  VSI time: 3340030100 ns
+  Inputs:
+	lateral_error = 0.28652357049354726
+	heading_error = -0.3411308615039852
+  Outputs:
+	v_left = -0.17871971329849845
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3350030100 ns
+  Inputs:
+	lateral_error = 0.2851853584790155
+	heading_error = -0.28113086150398514
+  Outputs:
+	v_left = 1.0
+	v_right = -0.024671556445659437
+
+
+
+
++=controller+=
+  VSI time: 3360030100 ns
+  Inputs:
+	lateral_error = 0.28385035946066833
+	heading_error = -0.33301278232964293
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3370030100 ns
+  Inputs:
+	lateral_error = 0.2825080106150348
+	heading_error = -0.2740767966647182
+  Outputs:
+	v_left = -0.08668064145296539
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3380030100 ns
+  Inputs:
+	lateral_error = 0.28118810688750584
+	heading_error = -0.3253103744870014
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17797551409035495
+
+
+
+
++=controller+=
+  VSI time: 3390030100 ns
+  Inputs:
+	lateral_error = 0.27990969529918397
+	heading_error = -0.38531037448700145
+  Outputs:
+	v_left = -0.07243269282909126
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3400030100 ns
+  Inputs:
+	lateral_error = 0.2781933546299384
+	heading_error = -0.33097634241435303
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3410030100 ns
+  Inputs:
+	lateral_error = 0.27685770238530377
+	heading_error = -0.38987511811887066
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03747450430359833
+
+
+
+
++=controller+=
+  VSI time: 3420030100 ns
+  Inputs:
+	lateral_error = 0.2750949863673337
+	heading_error = -0.336253483477416
+  Outputs:
+	v_left = -0.17871845546975096
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3430030100 ns
+  Inputs:
+	lateral_error = 0.2737751755113398
+	heading_error = -0.27625348347741596
+  Outputs:
+	v_left = 1.0
+	v_right = -0.024573933269148807
+
+
+
+
++=controller+=
+  VSI time: 3440030100 ns
+  Inputs:
+	lateral_error = 0.272462516411856
+	heading_error = -0.32812720869259593
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3450030100 ns
+  Inputs:
+	lateral_error = 0.2711391414331762
+	heading_error = -0.26919128591910857
+  Outputs:
+	v_left = -0.08624710258468637
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3460030100 ns
+  Inputs:
+	lateral_error = 0.2698420591863492
+	heading_error = -0.32041998258256577
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17763357018580828
+
+
+
+
++=controller+=
+  VSI time: 3470030100 ns
+  Inputs:
+	lateral_error = 0.26858219840553205
+	heading_error = -0.3804199825825658
+  Outputs:
+	v_left = -0.07202762508138172
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3480030100 ns
+  Inputs:
+	lateral_error = 0.26688576836375266
+	heading_error = -0.32610762745333144
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3490030100 ns
+  Inputs:
+	lateral_error = 0.2655685090790698
+	heading_error = -0.38498930596262193
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03731763018817158
+
+
+
+
++=controller+=
+  VSI time: 3500030100 ns
+  Inputs:
+	lateral_error = 0.2638260125455979
+	heading_error = -0.3313879247085527
+  Outputs:
+	v_left = -0.17870632244836093
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3510030100 ns
+  Inputs:
+	lateral_error = 0.2625245895399596
+	heading_error = -0.27138792470855266
+  Outputs:
+	v_left = 1.0
+	v_right = -0.024479708311762383
+
+
+
+
++=controller+=
+  VSI time: 3520030100 ns
+  Inputs:
+	lateral_error = 0.26123426390159216
+	heading_error = -0.32325380621796107
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3530030100 ns
+  Inputs:
+	lateral_error = 0.25992982977135676
+	heading_error = -0.2643184900955431
+  Outputs:
+	v_left = -0.08580650701681669
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3540030100 ns
+  Inputs:
+	lateral_error = 0.25865554913598116
+	heading_error = -0.3155424755111311
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17729294124307549
+
+
+
+
++=controller+=
+  VSI time: 3550030100 ns
+  Inputs:
+	lateral_error = 0.2574142202985108
+	heading_error = -0.3755424755111312
+  Outputs:
+	v_left = -0.0716135049636164
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3560030100 ns
+  Inputs:
+	lateral_error = 0.255737693409247
+	heading_error = -0.3212521501602903
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3570030100 ns
+  Inputs:
+	lateral_error = 0.2544388244880862
+	heading_error = -0.3801167972224442
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03716771796435214
+
+
+
+
++=controller+=
+  VSI time: 3580030100 ns
+  Inputs:
+	lateral_error = 0.2527165332378586
+	heading_error = -0.3265361219742635
+  Outputs:
+	v_left = -0.17868452766839182
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3590030100 ns
+  Inputs:
+	lateral_error = 0.25143347677522837
+	heading_error = -0.26653612197426346
+  Outputs:
+	v_left = 1.0
+	v_right = -0.024389024266406878
+
+
+
+
++=controller+=
+  VSI time: 3600030100 ns
+  Inputs:
+	lateral_error = 0.2501654677806474
+	heading_error = -0.318394507872481
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3610030100 ns
+  Inputs:
+	lateral_error = 0.2488799359090583
+	heading_error = -0.2594602814890612
+  Outputs:
+	v_left = -0.08535992528649006
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3620030100 ns
+  Inputs:
+	lateral_error = 0.2476284273400561
+	heading_error = -0.31067973270238136
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17695391896753432
+
+
+
+
++=controller+=
+  VSI time: 3630030100 ns
+  Inputs:
+	lateral_error = 0.2464056037472941
+	heading_error = -0.3706797327023814
+  Outputs:
+	v_left = -0.0711916334091689
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3640030100 ns
+  Inputs:
+	lateral_error = 0.2447489661112532
+	heading_error = -0.31641173643805676
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3650030100 ns
+  Inputs:
+	lateral_error = 0.24346847745483782
+	heading_error = -0.37525943238643356
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03702469659125518
+
+
+
+
++=controller+=
+  VSI time: 3660030100 ns
+  Inputs:
+	lateral_error = 0.24176637147534946
+	heading_error = -0.3216998507159752
+  Outputs:
+	v_left = -0.1786541401145687
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3670030100 ns
+  Inputs:
+	lateral_error = 0.24050165281984798
+	heading_error = -0.2616998507159751
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02430200257588655
+
+
+
+
++=controller+=
+  VSI time: 3680030100 ns
+  Inputs:
+	lateral_error = 0.23925593401201073
+	heading_error = -0.3135510855455381
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3690030100 ns
+  Inputs:
+	lateral_error = 0.2379892604888963
+	heading_error = -0.2546183785398095
+  Outputs:
+	v_left = -0.08490831186702363
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3700030100 ns
+  Inputs:
+	lateral_error = 0.2367604854121907
+	heading_error = -0.30583347866860366
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17661676836508977
+
+
+
+
++=controller+=
+  VSI time: 3710030100 ns
+  Inputs:
+	lateral_error = 0.23555613308458884
+	heading_error = -0.3658334786686037
+  Outputs:
+	v_left = -0.0707631644954474
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3720030100 ns
+  Inputs:
+	lateral_error = 0.23391936466510518
+	heading_error = -0.31158806307525255
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3730030100 ns
+  Inputs:
+	lateral_error = 0.23265723913870606
+	heading_error = -0.37041890149350687
+  Outputs:
+	v_left = 1.0
+	v_right = -0.036888499147003206
+
+
+
+
++=controller+=
+  VSI time: 3740030100 ns
+  Inputs:
+	lateral_error = 0.23097529280518464
+	heading_error = -0.3168807432687344
+  Outputs:
+	v_left = -0.17861610325538624
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3750030100 ns
+  Inputs:
+	lateral_error = 0.22972887630069477
+	heading_error = -0.25688074326873434
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02421874616475994
+
+
+
+
++=controller+=
+  VSI time: 3760030100 ns
+  Inputs:
+	lateral_error = 0.22850541222430168
+	heading_error = -0.30872516822608453
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3770030100 ns
+  Inputs:
+	lateral_error = 0.227257548050918
+	heading_error = -0.24979436306331504
+  Outputs:
+	v_left = -0.08445251985008906
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3780030100 ns
+  Inputs:
+	lateral_error = 0.22605145944229665
+	heading_error = -0.30100530037155293
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17628173104916522
+
+
+
+
++=controller+=
+  VSI time: 3790030100 ns
+  Inputs:
+	lateral_error = 0.2248655376131109
+	heading_error = -0.361005300371553
+  Outputs:
+	v_left = -0.0703291243501396
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3800030100 ns
+  Inputs:
+	lateral_error = 0.22324861249751088
+	heading_error = -0.3067826743790487
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3810030100 ns
+  Inputs:
+	lateral_error = 0.2220048263474776
+	heading_error = -0.36559676093150717
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0367590619045185
+
+
+
+
++=controller+=
+  VSI time: 3820030100 ns
+  Inputs:
+	lateral_error = 0.2203430086087998
+	heading_error = -0.31208030471400017
+  Outputs:
+	v_left = -0.1806165846915686
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3830030100 ns
+  Inputs:
+	lateral_error = 0.21911485213306678
+	heading_error = -0.2520803047140001
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0219204837527035
+
+
+
+
++=controller+=
+  VSI time: 3840030100 ns
+  Inputs:
+	lateral_error = 0.21791359890788944
+	heading_error = -0.3039182578092259
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3850030100 ns
+  Inputs:
+	lateral_error = 0.21668755065600134
+	heading_error = -0.24488742857464763
+  Outputs:
+	v_left = -0.08647085832570411
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3860030100 ns
+  Inputs:
+	lateral_error = 0.215501887878512
+	heading_error = -0.2959834527622829
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17486071879695098
+
+
+
+
++=controller+=
+  VSI time: 3870030100 ns
+  Inputs:
+	lateral_error = 0.21433516516217996
+	heading_error = -0.35598345276228294
+  Outputs:
+	v_left = -0.07172456135255645
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3880030100 ns
+  Inputs:
+	lateral_error = 0.21274328432275966
+	heading_error = -0.30165990984599755
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3890030100 ns
+  Inputs:
+	lateral_error = 0.2115175169352289
+	heading_error = -0.36040294578584486
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03574567049646904
+
+
+
+
++=controller+=
+  VSI time: 3900030100 ns
+  Inputs:
+	lateral_error = 0.20988072913980343
+	heading_error = -0.30681671771821684
+  Outputs:
+	v_left = -0.18120311011868862
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3910030100 ns
+  Inputs:
+	lateral_error = 0.20867262694235508
+	heading_error = -0.24681671771821678
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022760878537411267
+
+
+
+
++=controller+=
+  VSI time: 3920030100 ns
+  Inputs:
+	lateral_error = 0.20749470161947792
+	heading_error = -0.29860400124304043
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 3930030100 ns
+  Inputs:
+	lateral_error = 0.2062903076024678
+	heading_error = -0.23954384573710596
+  Outputs:
+	v_left = -0.08613073857164033
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3940030100 ns
+  Inputs:
+	lateral_error = 0.20513101116947843
+	heading_error = -0.29068188966397646
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17454258152959667
+
+
+
+
++=controller+=
+  VSI time: 3950030100 ns
+  Inputs:
+	lateral_error = 0.20398458886880494
+	heading_error = -0.3506818896639765
+  Outputs:
+	v_left = -0.07222547188712314
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3960030100 ns
+  Inputs:
+	lateral_error = 0.20241484351495095
+	heading_error = -0.2963753527353945
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3970030100 ns
+  Inputs:
+	lateral_error = 0.20120944655693365
+	heading_error = -0.3551024818118744
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03521805046933668
+
+
+
+
++=controller+=
+  VSI time: 3980030100 ns
+  Inputs:
+	lateral_error = 0.19959657337277617
+	heading_error = -0.3014912082175183
+  Outputs:
+	v_left = -0.18168615872485072
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 3990030100 ns
+  Inputs:
+	lateral_error = 0.1984087954400479
+	heading_error = -0.24149120821751824
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022922961852748447
+
+
+
+
++=controller+=
+  VSI time: 4000030100 ns
+  Inputs:
+	lateral_error = 0.1972551534259823
+	heading_error = -0.2932521107409851
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4010030100 ns
+  Inputs:
+	lateral_error = 0.19607241569746486
+	heading_error = -0.23416780280474248
+  Outputs:
+	v_left = -0.0858705279754608
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4020030100 ns
+  Inputs:
+	lateral_error = 0.1949388422757716
+	heading_error = -0.2853139508973799
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17419409544213982
+
+
+
+
++=controller+=
+  VSI time: 4030030100 ns
+  Inputs:
+	lateral_error = 0.19381300737948676
+	heading_error = -0.34531395089737993
+  Outputs:
+	v_left = -0.07228116250093408
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4040030100 ns
+  Inputs:
+	lateral_error = 0.19226587930108385
+	heading_error = -0.291020424498607
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4050030100 ns
+  Inputs:
+	lateral_error = 0.19108113730775791
+	heading_error = -0.34973012927071423
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03489876500745026
+
+
+
+
++=controller+=
+  VSI time: 4060030100 ns
+  Inputs:
+	lateral_error = 0.1894917495153938
+	heading_error = -0.2961160711456676
+  Outputs:
+	v_left = -0.18202379104240074
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4070030100 ns
+  Inputs:
+	lateral_error = 0.188324519403033
+	heading_error = -0.23611607114566757
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02289619915923302
+
+
+
+
++=controller+=
+  VSI time: 4080030100 ns
+  Inputs:
+	lateral_error = 0.18719569725829427
+	heading_error = -0.28786100939603987
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4090030100 ns
+  Inputs:
+	lateral_error = 0.1860345722676321
+	heading_error = -0.22875981984392002
+  Outputs:
+	v_left = -0.08557384177942762
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4100030100 ns
+  Inputs:
+	lateral_error = 0.1849266839693039
+	heading_error = -0.2799046298018819
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17382475868222869
+
+
+
+
++=controller+=
+  VSI time: 4110030100 ns
+  Inputs:
+	lateral_error = 0.18382162800426427
+	heading_error = -0.33990462980188196
+  Outputs:
+	v_left = -0.07211465742898393
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4120030100 ns
+  Inputs:
+	lateral_error = 0.18229729249226181
+	heading_error = -0.28562593771291045
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4130030100 ns
+  Inputs:
+	lateral_error = 0.18113338472458337
+	heading_error = -0.344317175647022
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0346773997094858
+
+
+
+
++=controller+=
+  VSI time: 4140030100 ns
+  Inputs:
+	lateral_error = 0.17956732763718256
+	heading_error = -0.2907114427755726
+  Outputs:
+	v_left = -0.18222917883283452
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4150030100 ns
+  Inputs:
+	lateral_error = 0.17842079208373327
+	heading_error = -0.23071144277557254
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022825006280202675
+
+
+
+
++=controller+=
+  VSI time: 4160030100 ns
+  Inputs:
+	lateral_error = 0.1773170896502901
+	heading_error = -0.2824453127610469
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4170030100 ns
+  Inputs:
+	lateral_error = 0.17617750597107812
+	heading_error = -0.22333385381940518
+  Outputs:
+	v_left = -0.08520808494960541
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4180030100 ns
+  Inputs:
+	lateral_error = 0.17509537308165354
+	heading_error = -0.27447510413341547
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17344935664686922
+
+
+
+
++=controller+=
+  VSI time: 4190030100 ns
+  Inputs:
+	lateral_error = 0.1740112061753997
+	heading_error = -0.3344751041334155
+  Outputs:
+	v_left = -0.07180821229026813
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4200030100 ns
+  Inputs:
+	lateral_error = 0.1725096968796895
+	heading_error = -0.2802146998859354
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4210030100 ns
+  Inputs:
+	lateral_error = 0.17136673446437412
+	heading_error = -0.338887167718279
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03451125485046358
+
+
+
+
++=controller+=
+  VSI time: 4220030100 ns
+  Inputs:
+	lateral_error = 0.16982390447969964
+	heading_error = -0.2852967571037657
+  Outputs:
+	v_left = -0.18232313230869934
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4230030100 ns
+  Inputs:
+	lateral_error = 0.16869813557840477
+	heading_error = -0.22529675710376562
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022750827209395696
+
+
+
+
++=controller+=
+  VSI time: 4240030100 ns
+  Inputs:
+	lateral_error = 0.16761970574899687
+	heading_error = -0.27702231984628867
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4250030100 ns
+  Inputs:
+	lateral_error = 0.1665015624288845
+	heading_error = -0.21790616323085388
+  Outputs:
+	v_left = -0.08477140744324108
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4260030100 ns
+  Inputs:
+	lateral_error = 0.1654452255739067
+	heading_error = -0.2690437045913239
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1730767359940828
+
+
+
+
++=controller+=
+  VSI time: 4270030100 ns
+  Inputs:
+	lateral_error = 0.16438198691317457
+	heading_error = -0.3290437045913239
+  Outputs:
+	v_left = -0.0713992445382754
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4280030100 ns
+  Inputs:
+	lateral_error = 0.1629032603845598
+	heading_error = -0.27480513421916175
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4290030100 ns
+  Inputs:
+	lateral_error = 0.16178129343007722
+	heading_error = -0.333458971018866
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03438338644114136
+
+
+
+
++=controller+=
+  VSI time: 4300030100 ns
+  Inputs:
+	lateral_error = 0.16026157600128862
+	heading_error = -0.27988900879195233
+  Outputs:
+	v_left = -0.1823246664454582
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4310030100 ns
+  Inputs:
+	lateral_error = 0.15915658008865657
+	heading_error = -0.21988900879195228
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022685220893724045
+
+
+
+
++=controller+=
+  VSI time: 4320030100 ns
+  Inputs:
+	lateral_error = 0.1581034723058809
+	heading_error = -0.2716081781140094
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4330030100 ns
+  Inputs:
+	lateral_error = 0.1570066384990396
+	heading_error = -0.2124919447917364
+  Outputs:
+	v_left = -0.08427185060744702
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4340030100 ns
+  Inputs:
+	lateral_error = 0.15597607741609906
+	heading_error = -0.2636262058364225
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1727114822630842
+
+
+
+
++=controller+=
+  VSI time: 4350030100 ns
+  Inputs:
+	lateral_error = 0.1549337446842209
+	heading_error = -0.32362620583642254
+  Outputs:
+	v_left = -0.07091008421168732
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4360030100 ns
+  Inputs:
+	lateral_error = 0.15347770667143112
+	heading_error = -0.2694126133060504
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4370030100 ns
+  Inputs:
+	lateral_error = 0.15237672925296872
+	heading_error = -0.3280481874192045
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03428630299499735
+
+
+
+
++=controller+=
+  VSI time: 4380030100 ns
+  Inputs:
+	lateral_error = 0.150879984375357
+	heading_error = -0.27450268320862037
+  Outputs:
+	v_left = -0.1822499027786597
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4390030100 ns
+  Inputs:
+	lateral_error = 0.14979571128261868
+	heading_error = -0.21450268320862032
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022631294339304997
+
+
+
+
++=controller+=
+  VSI time: 4400030100 ns
+  Inputs:
+	lateral_error = 0.14876789478221206
+	heading_error = -0.2662169983583702
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4410030100 ns
+  Inputs:
+	lateral_error = 0.14769221162614657
+	heading_error = -0.2071045032194374
+  Outputs:
+	v_left = -0.0837197317852848
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4420030100 ns
+  Inputs:
+	lateral_error = 0.1466873439453867
+	heading_error = -0.2582360679364024
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1723560088472771
+
+
+
+
++=controller+=
+  VSI time: 4430030100 ns
+  Inputs:
+	lateral_error = 0.14566584191914503
+	heading_error = -0.31823606793640247
+  Outputs:
+	v_left = -0.07035708790499096
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4440030100 ns
+  Inputs:
+	lateral_error = 0.14423235953243382
+	heading_error = -0.26405008134713803
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4450030100 ns
+  Inputs:
+	lateral_error = 0.1431523156127183
+	heading_error = -0.3226678817895019
+  Outputs:
+	v_left = 1.0
+	v_right = -0.034215952360031276
+
+
+
+
++=controller+=
+  VSI time: 4460030100 ns
+  Inputs:
+	lateral_error = 0.14167837660182397
+	heading_error = -0.2691500273942524
+  Outputs:
+	v_left = -0.18211243458848747
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4470030100 ns
+  Inputs:
+	lateral_error = 0.1406147279555167
+	heading_error = -0.20915002739425237
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02258979175749587
+
+
+
+
++=controller+=
+  VSI time: 4480030100 ns
+  Inputs:
+	lateral_error = 0.1396121063683448
+	heading_error = -0.26086082501225416
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4490030100 ns
+  Inputs:
+	lateral_error = 0.1385573898514475
+	heading_error = -0.2017552032828296
+  Outputs:
+	v_left = -0.08312507393280166
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4500030100 ns
+  Inputs:
+	lateral_error = 0.13757807740764064
+	heading_error = -0.25288469287070425
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17201168568767988
+
+
+
+
++=controller+=
+  VSI time: 4510030100 ns
+  Inputs:
+	lateral_error = 0.13657728564462523
+	heading_error = -0.3128846928707043
+  Outputs:
+	v_left = -0.06975348695175776
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4520030100 ns
+  Inputs:
+	lateral_error = 0.1351661942597037
+	heading_error = -0.2587284391740643
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4530030100 ns
+  Inputs:
+	lateral_error = 0.1341069839127951
+	heading_error = -0.3173290234584485
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0341695781972291
+
+
+
+
++=controller+=
+  VSI time: 4540030100 ns
+  Inputs:
+	lateral_error = 0.1326556595549
+	heading_error = -0.26384134911086043
+  Outputs:
+	v_left = -0.1819237779757774
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4550030100 ns
+  Inputs:
+	lateral_error = 0.1316124960056497
+	heading_error = -0.20384134911086038
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02256076674294749
+
+
+
+
++=controller+=
+  VSI time: 4560030100 ns
+  Inputs:
+	lateral_error = 0.13063491802598942
+	heading_error = -0.255549828020722
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4570030100 ns
+  Inputs:
+	lateral_error = 0.12960096204676244
+	heading_error = -0.19645363912193314
+  Outputs:
+	v_left = -0.08249685474126034
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4580030100 ns
+  Inputs:
+	lateral_error = 0.12864701840487733
+	heading_error = -0.24758167745908066
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17167934590982004
+
+
+
+
++=controller+=
+  VSI time: 4590030100 ns
+  Inputs:
+	lateral_error = 0.12766677802349785
+	heading_error = -0.3075816774590807
+  Outputs:
+	v_left = -0.06911037477457005
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4600030100 ns
+  Inputs:
+	lateral_error = 0.12627788609018914
+	heading_error = -0.25345683472201763
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4610030100 ns
+  Inputs:
+	lateral_error = 0.1252393714309986
+	heading_error = -0.3120408020175085
+  Outputs:
+	v_left = 1.0
+	v_right = -0.034144970244313844
+
+
+
+
++=controller+=
+  VSI time: 4620030100 ns
+  Inputs:
+	lateral_error = 0.1238104487624326
+	heading_error = -0.25858528327878005
+  Outputs:
+	v_left = -0.1816937213198072
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4630030100 ns
+  Inputs:
+	lateral_error = 0.12278759625433884
+	heading_error = -0.19858528327878
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022544028978749853
+
+
+
+
++=controller+=
+  VSI time: 4640030100 ns
+  Inputs:
+	lateral_error = 0.12183486422022562
+	heading_error = -0.25029253179099564
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4650030100 ns
+  Inputs:
+	lateral_error = 0.12082144350322212
+	heading_error = -0.1912078457250055
+  Outputs:
+	v_left = -0.08184287809299273
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4660030100 ns
+  Inputs:
+	lateral_error = 0.11989264105539947
+	heading_error = -0.24233504717394316
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1713595037900879
+
+
+
+
++=controller+=
+  VSI time: 4670030100 ns
+  Inputs:
+	lateral_error = 0.11893276067008293
+	heading_error = -0.3023350471739432
+  Outputs:
+	v_left = -0.06843714489124941
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4680030100 ns
+  Inputs:
+	lateral_error = 0.11756585354442098
+	heading_error = -0.24824290326929344
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4690030100 ns
+  Inputs:
+	lateral_error = 0.11654786411507194
+	heading_error = -0.30681087845879773
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03414020154183939
+
+
+
+
++=controller+=
+  VSI time: 4700030100 ns
+  Inputs:
+	lateral_error = 0.11514111112772425
+	heading_error = -0.2533890212142351
+  Outputs:
+	v_left = -0.18143059091617286
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4710030100 ns
+  Inputs:
+	lateral_error = 0.11413836633993492
+	heading_error = -0.19338902121423507
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022539266073355213
+
+
+
+
++=controller+=
+  VSI time: 4720030100 ns
+  Inputs:
+	lateral_error = 0.11321024346988653
+	heading_error = -0.24509603129132707
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4730030100 ns
+  Inputs:
+	lateral_error = 0.11221711623308628
+	heading_error = -0.18602450174551866
+  Outputs:
+	v_left = -0.0811698424606706
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4740030100 ns
+  Inputs:
+	lateral_error = 0.11131319252534287
+	heading_error = -0.2371514650491866
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1710524543761044
+
+
+
+
++=controller+=
+  VSI time: 4750030100 ns
+  Inputs:
+	lateral_error = 0.11037345342285627
+	heading_error = -0.29715146504918666
+  Outputs:
+	v_left = -0.06774175876363908
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4760030100 ns
+  Inputs:
+	lateral_error = 0.10902829662950632
+	heading_error = -0.24309297292615328
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4770030100 ns
+  Inputs:
+	lateral_error = 0.1080306341910688
+	heading_error = -0.3016455956449584
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03415353236610419
+
+
+
+
++=controller+=
+  VSI time: 4780030100 ns
+  Inputs:
+	lateral_error = 0.10664580231438912
+	heading_error = -0.2482585077067765
+  Outputs:
+	v_left = -0.1811414629518734
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4790030100 ns
+  Inputs:
+	lateral_error = 0.10566293738867111
+	heading_error = -0.18825850770677643
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02254608392557156
+
+
+
+
++=controller+=
+  VSI time: 4800030100 ns
+  Inputs:
+	lateral_error = 0.10475915400978598
+	heading_error = -0.23996618432508177
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4810030100 ns
+  Inputs:
+	lateral_error = 0.10378606436867596
+	heading_error = -0.1809091111774883
+  Outputs:
+	v_left = -0.08048346090579706
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4820030100 ns
+  Inputs:
+	lateral_error = 0.1029067276548829
+	heading_error = -0.23203641537376685
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17075832674651625
+
+
+
+
++=controller+=
+  VSI time: 4830030100 ns
+  Inputs:
+	lateral_error = 0.1019868883002003
+	heading_error = -0.2920364153737669
+  Outputs:
+	v_left = -0.06703095040266205
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4840030100 ns
+  Inputs:
+	lateral_error = 0.1006632303878366
+	heading_error = -0.23801224232847717
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4850030100 ns
+  Inputs:
+	lateral_error = 0.0996856731461537
+	heading_error = -0.29655015866580303
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03418337077200184
+
+
+
+
++=controller+=
+  VSI time: 4860030100 ns
+  Inputs:
+	lateral_error = 0.0983224994944462
+	heading_error = -0.2431986111456701
+  Outputs:
+	v_left = -0.18083233993175252
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4870030100 ns
+  Inputs:
+	lateral_error = 0.09735926614395977
+	heading_error = -0.18319861114567004
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0225640275809863
+
+
+
+
++=controller+=
+  VSI time: 4880030100 ns
+  Inputs:
+	lateral_error = 0.09647952509377541
+	heading_error = -0.23490777968427023
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4890030100 ns
+  Inputs:
+	lateral_error = 0.09552620521743464
+	heading_error = -0.17586616268768251
+  Outputs:
+	v_left = -0.07978858535312017
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4900030100 ns
+  Inputs:
+	lateral_error = 0.09467113931440371
+	heading_error = -0.2269943640667318
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1704771186226236
+
+
+
+
++=controller+=
+  VSI time: 4910030100 ns
+  Inputs:
+	lateral_error = 0.09377093926847858
+	heading_error = -0.28699436406673184
+  Outputs:
+	v_left = -0.06631039790232951
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4920030100 ns
+  Inputs:
+	lateral_error = 0.09246851433617967
+	heading_error = -0.2330049347990757
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4930030100 ns
+  Inputs:
+	lateral_error = 0.0915108206554618
+	heading_error = -0.2915287907302071
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03422825261540552
+
+
+
+
++=controller+=
+  VSI time: 4940030100 ns
+  Inputs:
+	lateral_error = 0.09016903005852693
+	heading_error = -0.2382132708350908
+  Outputs:
+	v_left = -0.18050830102666304
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4950030100 ns
+  Inputs:
+	lateral_error = 0.0892251631383632
+	heading_error = -0.17821327083509075
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022592596961303668
+
+
+
+
++=controller+=
+  VSI time: 4960030100 ns
+  Inputs:
+	lateral_error = 0.08836914446230801
+	heading_error = -0.22992468346586126
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 4970030100 ns
+  Inputs:
+	lateral_error = 0.08743531650416356
+	heading_error = -0.1708992684145283
+  Outputs:
+	v_left = -0.07908932107052336
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 4980030100 ns
+  Inputs:
+	lateral_error = 0.08660418503028249
+	heading_error = -0.22202889826259353
+  Outputs:
+	v_left = 1.0
+	v_right = -0.17020872247055385
+
+
+
+
++=controller+=
+  VSI time: 4990030100 ns
+  Inputs:
+	lateral_error = 0.08572334835348754
+	heading_error = -0.2820288982625936
+  Outputs:
+	v_left = -0.06558487130599655
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5000030100 ns
+  Inputs:
+	lateral_error = 0.08444187829533467
+	heading_error = -0.22807443220906753
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5010030100 ns
+  Inputs:
+	lateral_error = 0.08350378995663435
+	heading_error = -0.2865848683325951
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03428682865683752
+
+
+
+
++=controller+=
+  VSI time: 5020030100 ns
+  Inputs:
+	lateral_error = 0.0821830967947629
+	heading_error = -0.23330562476729533
+  Outputs:
+	v_left = -0.18017363155826727
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5030030100 ns
+  Inputs:
+	lateral_error = 0.08125831740335406
+	heading_error = -0.17330562476729527
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022631260307672152
+
+
+
+
++=controller+=
+  VSI time: 5040030100 ns
+  Inputs:
+	lateral_error = 0.08042568244177928
+	heading_error = -0.2250199662001373
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5050030100 ns
+  Inputs:
+	lateral_error = 0.07951106026761454
+	heading_error = -0.16601128462222414
+  Outputs:
+	v_left = -0.07838912819104482
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5060030100 ns
+  Inputs:
+	lateral_error = 0.0787035103407007
+	heading_error = -0.2171428476376076
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16995294676125228
+
+
+
+
++=controller+=
+  VSI time: 5070030100 ns
+  Inputs:
+	lateral_error = 0.0778417485469679
+	heading_error = -0.27714284763760766
+  Outputs:
+	v_left = -0.0648583608042328
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5080030100 ns
+  Inputs:
+	lateral_error = 0.07658094504924606
+	heading_error = -0.22322339122805523
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5090030100 ns
+  Inputs:
+	lateral_error = 0.07566219010718016
+	heading_error = -0.28172103856611797
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03435785458467422
+
+
+
+
++=controller+=
+  VSI time: 5100030100 ns
+  Inputs:
+	lateral_error = 0.07436229996931647
+	heading_error = -0.22847812052590655
+  Outputs:
+	v_left = -0.1798319349386598
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5110030100 ns
+  Inputs:
+	lateral_error = 0.07345631814053748
+	heading_error = -0.1684781205259065
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022679465756557327
+
+
+
+
++=controller+=
+  VSI time: 5120030100 ns
+  Inputs:
+	lateral_error = 0.07264671308342323
+	heading_error = -0.22019601325514015
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5130030100 ns
+  Inputs:
+	lateral_error = 0.07175100381714246
+	heading_error = -0.16120441650820716
+  Outputs:
+	v_left = -0.07769091051254895
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5140030100 ns
+  Inputs:
+	lateral_error = 0.07096666927816425
+	heading_error = -0.21233838979603492
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16970953379619547
+
+
+
+
++=controller+=
+  VSI time: 5150030100 ns
+  Inputs:
+	lateral_error = 0.07012368389681639
+	heading_error = -0.272338389796035
+  Outputs:
+	v_left = -0.06413418785029446
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5160030100 ns
+  Inputs:
+	lateral_error = 0.06888325021572846
+	heading_error = -0.2184538442704076
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5170030100 ns
+  Inputs:
+	lateral_error = 0.06798354550125357
+	heading_error = -0.2769393209602171
+  Outputs:
+	v_left = 1.0
+	v_right = -0.034440182513236994
+
+
+
+
++=controller+=
+  VSI time: 5180030100 ns
+  Inputs:
+	lateral_error = 0.06670415668263918
+	heading_error = -0.2237326115677023
+  Outputs:
+	v_left = -0.17948622951573245
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5190030100 ns
+  Inputs:
+	lateral_error = 0.06581667372062946
+	heading_error = -0.16373261156770225
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022736651122441387
+
+
+
+
++=controller+=
+  VSI time: 5200030100 ns
+  Inputs:
+	lateral_error = 0.06502973269697032
+	heading_error = -0.21545462069336407
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5210030100 ns
+  Inputs:
+	lateral_error = 0.06415263810231597
+	heading_error = -0.1564803092175775
+  Outputs:
+	v_left = -0.0769970927516953
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5220030100 ns
+  Inputs:
+	lateral_error = 0.06339114232326355
+	heading_error = -0.2076171417736994
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16947817474913163
+
+
+
+
++=controller+=
+  VSI time: 5230030100 ns
+  Inputs:
+	lateral_error = 0.06256662711837535
+	heading_error = -0.26761714177369944
+  Outputs:
+	v_left = -0.06341510132411465
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5240030100 ns
+  Inputs:
+	lateral_error = 0.06134625966208684
+	heading_error = -0.2137672871361147
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5250030100 ns
+  Inputs:
+	lateral_error = 0.060465312973563994
+	heading_error = -0.2722411958735713
+  Outputs:
+	v_left = 1.0
+	v_right = -0.034532753411655404
+
+
+
+
++=controller+=
+  VSI time: 5260030100 ns
+  Inputs:
+	lateral_error = 0.059206117827163084
+	heading_error = -0.2190704408073656
+  Outputs:
+	v_left = -0.17913903232117478
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5270030100 ns
+  Inputs:
+	lateral_error = 0.05833682832923322
+	heading_error = -0.15907044080736554
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022802251993354505
+
+
+
+
++=controller+=
+  VSI time: 5280030100 ns
+  Inputs:
+	lateral_error = 0.05757217608934025
+	heading_error = -0.21079707847794849
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5290030100 ns
+  Inputs:
+	lateral_error = 0.05671339380369755
+	heading_error = -0.15184012686188986
+  Outputs:
+	v_left = -0.0763096875919822
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5300030100 ns
+  Inputs:
+	lateral_error = 0.05597435213059447
+	heading_error = -0.2029802394615574
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16925852232418237
+
+
+
+
++=controller+=
+  VSI time: 5310030100 ns
+  Inputs:
+	lateral_error = 0.055167995021438904
+	heading_error = -0.26298023946155746
+  Outputs:
+	v_left = -0.0627033606276195
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5320030100 ns
+  Inputs:
+	lateral_error = 0.053967384757251075
+	heading_error = -0.2091647550819582
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5330030100 ns
+  Inputs:
+	lateral_error = 0.05310489677697507
+	heading_error = -0.26762768119816727
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03463459022666271
+
+
+
+
++=controller+=
+  VSI time: 5340030100 ns
+  Inputs:
+	lateral_error = 0.051865582931439676
+	heading_error = -0.2144925131667863
+  Outputs:
+	v_left = -0.17879243142688717
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5350030100 ns
+  Inputs:
+	lateral_error = 0.051014176538669326
+	heading_error = -0.15449251316678625
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022875708298159436
+
+
+
+
++=controller+=
+  VSI time: 5360030100 ns
+  Inputs:
+	lateral_error = 0.05027143078026097
+	heading_error = -0.20622424267811956
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5370030100 ns
+  Inputs:
+	lateral_error = 0.04943065541493412
+	heading_error = -0.14728462110677532
+  Outputs:
+	v_left = -0.07563035379659488
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5380030100 ns
+  Inputs:
+	lateral_error = 0.048713677290679824
+	heading_error = -0.19842840652168325
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16905020134271842
+
+
+
+
++=controller+=
+  VSI time: 5390030100 ns
+  Inputs:
+	lateral_error = 0.04792516201132054
+	heading_error = -0.2584284065216833
+  Outputs:
+	v_left = -0.06200080738800973
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5400030100 ns
+  Inputs:
+	lateral_error = 0.04674399571634098
+	heading_error = -0.20464688883185378
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5410030100 ns
+  Inputs:
+	lateral_error = 0.04589966168524545
+	heading_error = -0.2630993988989898
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03474479157589183
+
+
+
+
++=controller+=
+  VSI time: 5420030100 ns
+  Inputs:
+	lateral_error = 0.0446799131409617
+	heading_error = -0.2099993585295894
+  Outputs:
+	v_left = -0.17844814839473366
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5430030100 ns
+  Inputs:
+	lateral_error = 0.04384607605108905
+	heading_error = -0.14999935852958934
+  Outputs:
+	v_left = 1.0
+	v_right = -0.022956469527926626
+
+
+
+
++=controller+=
+  VSI time: 5440030100 ns
+  Inputs:
+	lateral_error = 0.043124849433702137
+	heading_error = -0.20173659810838407
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5450030100 ns
+  Inputs:
+	lateral_error = 0.04230177355356843
+	heading_error = -0.14281419068864754
+  Outputs:
+	v_left = -0.07496044652907385
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5460030100 ns
+  Inputs:
+	lateral_error = 0.041606464359832826
+	heading_error = -0.19396201416504377
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16885281753184356
+
+
+
+
++=controller+=
+  VSI time: 5470030100 ns
+  Inputs:
+	lateral_error = 0.04083547189112309
+	heading_error = -0.2539620141650438
+  Outputs:
+	v_left = -0.061308927254529744
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5480030100 ns
+  Inputs:
+	lateral_error = 0.03967343326276288
+	heading_error = -0.20021399183859012
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5490030100 ns
+  Inputs:
+	lateral_error = 0.038846944442102876
+	heading_error = -0.25865663271518224
+  Outputs:
+	v_left = 1.0
+	v_right = -0.034862525935487776
+
+
+
+
++=controller+=
+  VSI time: 5500030100 ns
+  Inputs:
+	lateral_error = 0.03764644255585974
+	heading_error = -0.20559118635245577
+  Outputs:
+	v_left = -0.17810759211922922
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5510030100 ns
+  Inputs:
+	lateral_error = 0.036829858828700386
+	heading_error = -0.14559118635245571
+  Outputs:
+	v_left = 1.0
+	v_right = -0.023043998795773457
+
+
+
+
++=controller+=
+  VSI time: 5520030100 ns
+  Inputs:
+	lateral_error = 0.03612976071543492
+	heading_error = -0.19733431264923018
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5530030100 ns
+  Inputs:
+	lateral_error = 0.035324075709618624
+	heading_error = -0.13842893304326864
+  Outputs:
+	v_left = -0.07430106089147259
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5540030100 ns
+  Inputs:
+	lateral_error = 0.03465003836224355
+	heading_error = -0.18958113298305745
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16866596476000462
+
+
+
+
++=controller+=
+  VSI time: 5550030100 ns
+  Inputs:
+	lateral_error = 0.033896248165298216
+	heading_error = -0.2495811329830575
+  Outputs:
+	v_left = -0.06062890309740632
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5560030100 ns
+  Inputs:
+	lateral_error = 0.03275301880617103
+	heading_error = -0.19586607993848393
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5570030100 ns
+  Inputs:
+	lateral_error = 0.03194406375156358
+	heading_error = -0.2542993781764844
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03498702626895922
+
+
+
+
++=controller+=
+  VSI time: 5580030100 ns
+  Inputs:
+	lateral_error = 0.030762488119530022
+	heading_error = -0.20126793302161428
+  Outputs:
+	v_left = -0.17777190520157926
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5590030100 ns
+  Inputs:
+	lateral_error = 0.02996284080135498
+	heading_error = -0.14126793302161422
+  Outputs:
+	v_left = 1.0
+	v_right = -0.023137775909182312
+
+
+
+
++=controller+=
+  VSI time: 5600030100 ns
+  Inputs:
+	lateral_error = 0.029283478762143916
+	heading_error = -0.19301728433506238
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5610030100 ns
+  Inputs:
+	lateral_error = 0.028494875616253103
+	heading_error = -0.13412868907498332
+  Outputs:
+	v_left = -0.07365306956574658
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5620030100 ns
+  Inputs:
+	lateral_error = 0.027841711944444656
+	heading_error = -0.18528557787044253
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16848923094094215
+
+
+
+
++=controller+=
+  VSI time: 5630030100 ns
+  Inputs:
+	lateral_error = 0.027104803020986227
+	heading_error = -0.24528557787044258
+  Outputs:
+	v_left = -0.05996166075670073
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5640030100 ns
+  Inputs:
+	lateral_error = 0.025980063311255238
+	heading_error = -0.19160292439215532
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5650030100 ns
+  Inputs:
+	lateral_error = 0.025188328981457796
+	heading_error = -0.2500273859392026
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03511758505752405
+
+
+
+
++=controller+=
+  VSI time: 5660030100 ns
+  Inputs:
+	lateral_error = 0.024025358229397737
+	heading_error = -0.19702930290136766
+  Outputs:
+	v_left = -0.17744200385077968
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5670030100 ns
+  Inputs:
+	lateral_error = 0.023242330319372746
+	heading_error = -0.1370293029013676
+  Outputs:
+	v_left = 1.0
+	v_right = -0.023237299613333318
+
+
+
+
++=controller+=
+  VSI time: 5680030100 ns
+  Inputs:
+	lateral_error = 0.022583311425745108
+	heading_error = -0.1887851821542439
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5690030100 ns
+  Inputs:
+	lateral_error = 0.021811481405243863
+	heading_error = -0.1299130819617047
+  Outputs:
+	v_left = -0.07301715533317688
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5700030100 ns
+  Inputs:
+	lateral_error = 0.021178793341181893
+	heading_error = -0.18107494694237136
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16832220280339805
+
+
+
+
++=controller+=
+  VSI time: 5710030100 ns
+  Inputs:
+	lateral_error = 0.020458445142957176
+	heading_error = -0.24107494694237142
+  Outputs:
+	v_left = -0.05930790834454036
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5720030100 ns
+  Inputs:
+	lateral_error = 0.019351875011828504
+	heading_error = -0.18742408917571263
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5730030100 ns
+  Inputs:
+	lateral_error = 0.018577047731998
+	heading_error = -0.2458401993158823
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0352535497000076
+
+
+
+
++=controller+=
+  VSI time: 5740030100 ns
+  Inputs:
+	lateral_error = 0.017432360220966836
+	heading_error = -0.1928748038986554
+  Outputs:
+	v_left = -0.17711861218157132
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5750030100 ns
+  Inputs:
+	lateral_error = 0.016665635499846114
+	heading_error = -0.13287480389865536
+  Outputs:
+	v_left = 1.0
+	v_right = -0.023342089146415668
+
+
+
+
++=controller+=
+  VSI time: 5760030100 ns
+  Inputs:
+	lateral_error = 0.016026567437449395
+	heading_error = -0.18463748138365554
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5770030100 ns
+  Inputs:
+	lateral_error = 0.015271202690869267
+	heading_error = -0.12578155077457698
+  Outputs:
+	v_left = -0.0723938391482889
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5780030100 ns
+  Inputs:
+	lateral_error = 0.014658593293146224
+	heading_error = -0.17694865523189796
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16816446970110543
+
+
+
+
++=controller+=
+  VSI time: 5790030100 ns
+  Inputs:
+	lateral_error = 0.013954486499807765
+	heading_error = -0.236948655231898
+  Outputs:
+	v_left = -0.05866816997567936
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5800030100 ns
+  Inputs:
+	lateral_error = 0.012865766106673249
+	heading_error = -0.18332896327448367
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5810030100 ns
+  Inputs:
+	lateral_error = 0.012107532403526024
+	heading_error = -0.24173718675953904
+  Outputs:
+	v_left = 1.0
+	v_right = -0.035394318255677515
+
+
+
+
++=controller+=
+  VSI time: 5820030100 ns
+  Inputs:
+	lateral_error = 0.01098080685866019
+	heading_error = -0.188803778260755
+  Outputs:
+	v_left = -0.1768022916673574
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5830030100 ns
+  Inputs:
+	lateral_error = 0.01023007059738375
+	heading_error = -0.12880377826075495
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02345168523035479
+
+
+
+
++=controller+=
+  VSI time: 5840030100 ns
+  Inputs:
+	lateral_error = 0.00961056261928366
+	heading_error = -0.18057349417353885
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5850030100 ns
+  Inputs:
+	lateral_error = 0.008871356709192918
+	heading_error = -0.12173337959017116
+  Outputs:
+	v_left = -0.07178350435723424
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5860030100 ns
+  Inputs:
+	lateral_error = 0.008278431040667307
+	heading_error = -0.17290596385168877
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1680156266158549
+
+
+
+
++=controller+=
+  VSI time: 5870030100 ns
+  Inputs:
+	lateral_error = 0.007590248223062965
+	heading_error = -0.23290596385168882
+  Outputs:
+	v_left = -0.0580428146879064
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5880030100 ns
+  Inputs:
+	lateral_error = 0.006519058557728217
+	heading_error = -0.17931678863382716
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5890030100 ns
+  Inputs:
+	lateral_error = 0.005777105881973041
+	heading_error = -0.2377175699646199
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03553933550673338
+
+
+
+
++=controller+=
+  VSI time: 5900030100 ns
+  Inputs:
+	lateral_error = 0.004668021951394895
+	heading_error = -0.18481542923022465
+  Outputs:
+	v_left = -0.1764934664080009
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5910030100 ns
+  Inputs:
+	lateral_error = 0.0039329615150130665
+	heading_error = -0.1248154292302246
+  Outputs:
+	v_left = 1.0
+	v_right = -0.02356565060353155
+
+
+
+
++=controller+=
+  VSI time: 5920030100 ns
+  Inputs:
+	lateral_error = 0.003332625255938923
+	heading_error = -0.1765923960055611
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 5930030100 ns
+  Inputs:
+	lateral_error = 0.0026092736248729924
+	heading_error = -0.11776772268516122
+  Outputs:
+	v_left = -0.07118641757457689
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5940030100 ns
+  Inputs:
+	lateral_error = 0.00203563950303424
+	heading_error = -0.16894600521533798
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16787527648621703
+
+
+
+
++=controller+=
+  VSI time: 5950030100 ns
+  Inputs:
+	lateral_error = 0.0013630656867045783
+	heading_error = -0.22894600521533803
+  Outputs:
+	v_left = -0.05743208121387411
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5960030100 ns
+  Inputs:
+	lateral_error = 0.00030908909718178586
+	heading_error = -0.1753866843366092
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5970030100 ns
+  Inputs:
+	lateral_error = -0.00041689355321018783
+	heading_error = -0.23378044816092025
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03568808931940293
+
+
+
+
++=controller+=
+  VSI time: 5980030100 ns
+  Inputs:
+	lateral_error = -0.001508654802902287
+	heading_error = -0.18090884410022667
+  Outputs:
+	v_left = -0.1761963803613099
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 5990030100 ns
+  Inputs:
+	lateral_error = -0.0022283494425001686
+	heading_error = -0.12090884410022662
+  Outputs:
+	v_left = 1.0
+	v_right = -0.023669061111322165
+
+
+
+
++=controller+=
+  VSI time: 6000030100 ns
+  Inputs:
+	lateral_error = -0.0028098992732972367
+	heading_error = -0.17269324856619672
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 6010030100 ns
+  Inputs:
+	lateral_error = -0.0035176955140244427
+	heading_error = -0.11388342954813124
+  Outputs:
+	v_left = -0.07063193384008781
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6020030100 ns
+  Inputs:
+	lateral_error = -0.004072434167774573
+	heading_error = -0.16506688260369717
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16770802755315062
+
+
+
+
++=controller+=
+  VSI time: 6030030100 ns
+  Inputs:
+	lateral_error = -0.004729707387178567
+	heading_error = -0.22506688260369723
+  Outputs:
+	v_left = -0.05687357792317371
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6040030100 ns
+  Inputs:
+	lateral_error = -0.005766749985442039
+	heading_error = -0.17153528591169298
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6050030100 ns
+  Inputs:
+	lateral_error = -0.006477091639587194
+	heading_error = -0.22992068728935067
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03579467606600861
+
+
+
+
++=controller+=
+  VSI time: 6060030100 ns
+  Inputs:
+	lateral_error = -0.007551785606089686
+	heading_error = -0.17707700839319207
+  Outputs:
+	v_left = -0.1759593379152562
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6070030100 ns
+  Inputs:
+	lateral_error = -0.00825639778953521
+	heading_error = -0.11707700839319202
+  Outputs:
+	v_left = 1.0
+	v_right = -0.023747006961063133
+
+
+
+
++=controller+=
+  VSI time: 6080030100 ns
+  Inputs:
+	lateral_error = -0.008819540601075317
+	heading_error = -0.16886674219649223
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 6090030100 ns
+  Inputs:
+	lateral_error = -0.00951200388495043
+	heading_error = -0.11006877530072945
+  Outputs:
+	v_left = -0.07011637803199089
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6100030100 ns
+  Inputs:
+	lateral_error = -0.010048194538962708
+	heading_error = -0.16125612564878278
+  Outputs:
+	v_left = 1.0
+	v_right = -0.1675430565398558
+
+
+
+
++=controller+=
+  VSI time: 6110030100 ns
+  Inputs:
+	lateral_error = -0.010690427187401631
+	heading_error = -0.22125612564878283
+  Outputs:
+	v_left = -0.05635358761710052
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6120030100 ns
+  Inputs:
+	lateral_error = -0.01171076663542002
+	heading_error = -0.16775030674718305
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6130030100 ns
+  Inputs:
+	lateral_error = -0.012405721085616677
+	heading_error = -0.22612745957417602
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0359008345295484
+
+
+
+
++=controller+=
+  VSI time: 6140030100 ns
+  Inputs:
+	lateral_error = -0.01346357353673039
+	heading_error = -0.17330978019332122
+  Outputs:
+	v_left = -0.17574769268403245
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6150030100 ns
+  Inputs:
+	lateral_error = -0.014153347478274868
+	heading_error = -0.11330978019332116
+  Outputs:
+	v_left = 1.0
+	v_right = -0.023828347261083627
+
+
+
+
++=controller+=
+  VSI time: 6160030100 ns
+  Inputs:
+	lateral_error = -0.014698388744395862
+	heading_error = -0.16510482191979836
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 6170030100 ns
+  Inputs:
+	lateral_error = -0.015375741685976328
+	heading_error = -0.10631743728559684
+  Outputs:
+	v_left = -0.06962736724666485
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6180030100 ns
+  Inputs:
+	lateral_error = -0.015893684986870237
+	heading_error = -0.15750885464865094
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16738001629400934
+
+
+
+
++=controller+=
+  VSI time: 6190030100 ns
+  Inputs:
+	lateral_error = -0.016521118539476652
+	heading_error = -0.217508854648651
+  Outputs:
+	v_left = -0.05586288182964527
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6200030100 ns
+  Inputs:
+	lateral_error = -0.017524980590365478
+	heading_error = -0.1640274862863178
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6210030100 ns
+  Inputs:
+	lateral_error = -0.018204785449256206
+	heading_error = -0.22239648710101845
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03600438424875896
+
+
+
+
++=controller+=
+  VSI time: 6220030100 ns
+  Inputs:
+	lateral_error = -0.019246016306060102
+	heading_error = -0.16960334300953628
+  Outputs:
+	v_left = -0.17555701685250358
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6230030100 ns
+  Inputs:
+	lateral_error = -0.019921181892781928
+	heading_error = -0.10960334300953622
+  Outputs:
+	v_left = 1.0
+	v_right = -0.0239098570255466
+
+
+
+
++=controller+=
+  VSI time: 6240030100 ns
+  Inputs:
+	lateral_error = -0.020448410531968844
+	heading_error = -0.16140356222197427
+  Outputs:
+	v_left = 1.0
+	v_right = -0.2
+
+
+
+
++=controller+=
+  VSI time: 6250030100 ns
+  Inputs:
+	lateral_error = -0.021110865655791636
+	heading_error = -0.10262571137934895
+  Outputs:
+	v_left = -0.06916050499988124
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6260030100 ns
+  Inputs:
+	lateral_error = -0.021610846666286907
+	heading_error = -0.1538212042306264
+  Outputs:
+	v_left = 1.0
+	v_right = -0.16721864726828928
+
+
+
+
++=controller+=
+  VSI time: 6270030100 ns
+  Inputs:
+	lateral_error = -0.02222370798023951
+	heading_error = -0.21382120423062645
+  Outputs:
+	v_left = -0.05539625076637822
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6280030100 ns
+  Inputs:
+	lateral_error = -0.023211308320914077
+	heading_error = -0.16036317898063235
+  Outputs:
+	v_left = -0.2
+	v_right = 1.0
+
+
+
+
++=controller+=
+  VSI time: 6290030100 ns
+  Inputs:
+	lateral_error = -0.023876187363183574
+	heading_error = -0.2187241113440468
+  Outputs:
+	v_left = 1.0
+	v_right = -0.03610522332601873
+
+
+
+make[1]: Leaving directory '/data/tools/pave/innexis_home/vsi_2025.2/examples/vsiTutorials/lineFollowerDemo/src/lineFollowerDemo'
+
+Script done on 2026-03-17 03:33:33+00:00 [COMMAND_EXIT_CODE="0"]
