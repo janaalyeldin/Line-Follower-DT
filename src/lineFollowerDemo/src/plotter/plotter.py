@@ -32,7 +32,7 @@ class MySignals:
 import os
 src_dir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..'))
 sys.path.insert(0, src_dir)
-from lineRobot.robot_kinematics import StraightPath
+from lineRobot.robot_kinematics import StraightPath, CurvedPath
 from plotter.plot import RealTimePlotter, KPILogger, ExperimentReporter
 # End of user custom code region. Please don't edit beyond this point.
 class Plotter:
@@ -58,6 +58,7 @@ class Plotter:
 		os.makedirs(self.results_dir, exist_ok=True)
 		print(f"  [Plotter] Results will be saved to: {self.results_dir}")
  
+		#self.path=CurvedPath()
 		self.path    = StraightPath(x_end=10.0, y_end=0.0)
 		self.plotter = RealTimePlotter(path=self.path)
 		self.logger  = KPILogger(log_dir=self.results_dir)
