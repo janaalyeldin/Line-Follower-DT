@@ -35,7 +35,7 @@ import os
 # Navigate up to src/ where lineRobot/ and PIDController/ folders live
 src_dir = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', '..'))
 sys.path.insert(0, src_dir)
-from lineRobot.robot_kinematics import RobotState, StraightPath, kinematics_step, compute_errors
+from lineRobot.robot_kinematics import RobotState, StraightPath, kinematics_step, compute_errors, CurvedPath
 # End of user custom code region. Please don't edit beyond this point.
 class Simulator:
 
@@ -56,6 +56,7 @@ class Simulator:
 		# Start of user custom code region. Please apply edits only within these regions:  Constructor
 # Initialize path and robot state
 		# Spawn robot with slight offset to demonstrate PID correction
+		#self.path=CurvedPath()
 		self.path  = StraightPath(x_end=10.0, y_end=0.0)
 		self.state = RobotState(x=0.0, y=0.8, theta=0.3)
  
